@@ -115,7 +115,7 @@
 					"sizingX": "fixed",
 					"sizingY": "move"
 				},
-				"GedPieceFile": {
+				"WebZone": {
 					"type": "webArea",
 					"left": 1,
 					"top": 0,
@@ -135,12 +135,12 @@
 				"zSaisie",
 				"zNom",
 				"bShow",
-				"GedPieceFile"
+				"WebZone"
 			]
 		}
 	],
 	"method": "method.4dm",
-	"geometryStamp": 218,
+	"geometryStamp": 219,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

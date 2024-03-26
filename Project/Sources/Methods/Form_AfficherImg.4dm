@@ -10,4 +10,4 @@ READ PICTURE FILE:C678($file_f.platformPath; $img)
 TRANSFORM PICTURE:C988($img; Scale:K61:2; 4; 4)
 Form:C1466.img:=$img
 Form:C1466.nomImg:=$file_f.platformPath
-WA OPEN URL:C1020(*; "GedPieceFile"; "file://"+$file_f.path)
+WA OPEN URL:C1020(*; "WebZone"; "file://"+$file_f.path)
