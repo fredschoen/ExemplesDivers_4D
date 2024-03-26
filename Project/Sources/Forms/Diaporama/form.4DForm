@@ -179,6 +179,26 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "i"
+				},
+				"btClose": {
+					"type": "button",
+					"text": "",
+					"top": 405,
+					"left": 2,
+					"width": 13,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "a",
+					"action": "",
+					"visibility": "visible",
+					"method": "ObjectMethods/btClose.4dm",
+					"style": "custom"
 				}
 			},
 			"entryOrder": [
@@ -191,12 +211,13 @@
 				"bShow",
 				"WebZone",
 				"btWebZone",
-				"btInputZone"
+				"btInputZone",
+				"btClose"
 			]
 		}
 	],
 	"method": "method.4dm",
-	"geometryStamp": 284,
+	"geometryStamp": 293,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
