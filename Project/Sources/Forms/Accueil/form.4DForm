@@ -59,11 +59,72 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/bVariant.4dm"
+				},
+				"bFixerTitre": {
+					"type": "button",
+					"text": "fixer titre",
+					"top": 183,
+					"left": 67,
+					"width": 219,
+					"height": 49,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bFixerTitre.4dm"
+				},
+				"List Box": {
+					"type": "listbox",
+					"left": 78,
+					"top": 245,
+					"width": 198,
+					"height": 49,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Entête1"
+							},
+							"name": "Colonne1",
+							"footer": {
+								"name": "Pied1"
+							}
+						}
+					]
+				},
+				"bAffDiaporama": {
+					"type": "button",
+					"text": "aff diaporama",
+					"top": 15,
+					"left": 52,
+					"width": 98,
+					"height": 33,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAffDiaporama.4dm"
+				},
+				"bAffListeHierarchique": {
+					"type": "button",
+					"text": "aff ListeHierarchique",
+					"top": 15,
+					"left": 148,
+					"width": 153,
+					"height": 33,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAffListeHierarchique.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 6,
+	"geometryStamp": 24,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
