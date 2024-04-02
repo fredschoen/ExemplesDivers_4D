@@ -72,7 +72,7 @@
 					],
 					"method": "ObjectMethods/bFixerTitre.4dm"
 				},
-				"List Box": {
+				"LB1": {
 					"type": "listbox",
 					"left": 78,
 					"top": 245,
@@ -84,16 +84,20 @@
 						"onDataChange",
 						"onSelectionChange"
 					],
+					"sizingY": "fixed",
+					"sizingX": "grow",
 					"columns": [
 						{
 							"header": {
 								"text": "Header1",
-								"name": "Entête1"
+								"name": "Ent1"
 							},
 							"name": "Colonne1",
 							"footer": {
 								"name": "Pied1"
-							}
+							},
+							"width": 72,
+							"maxWidth": 200
 						}
 					]
 				},
@@ -124,7 +128,7 @@
 			}
 		}
 	],
-	"geometryStamp": 24,
+	"geometryStamp": 29,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
