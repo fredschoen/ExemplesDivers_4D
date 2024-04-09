@@ -41,8 +41,8 @@
 					"text": "toolFieldTextToPointer",
 					"top": 68,
 					"left": 52,
-					"width": 239,
-					"height": 46,
+					"width": 158,
+					"height": 41,
 					"events": [
 						"onClick"
 					],
@@ -51,10 +51,10 @@
 				"bVariant": {
 					"type": "button",
 					"text": "Variant",
-					"top": 124,
-					"left": 62,
-					"width": 224,
-					"height": 52,
+					"top": 68,
+					"left": 214,
+					"width": 133,
+					"height": 41,
 					"events": [
 						"onClick"
 					],
@@ -63,10 +63,10 @@
 				"bFixerTitre": {
 					"type": "button",
 					"text": "fixer titre",
-					"top": 183,
-					"left": 67,
-					"width": 219,
-					"height": 49,
+					"top": 116,
+					"left": 57,
+					"width": 167,
+					"height": 44,
 					"events": [
 						"onClick"
 					],
@@ -74,8 +74,8 @@
 				},
 				"LB1": {
 					"type": "listbox",
-					"left": 78,
-					"top": 245,
+					"left": 228,
+					"top": 116,
 					"width": 198,
 					"height": 49,
 					"events": [
@@ -124,11 +124,23 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/bAffListeHierarchique.4dm"
+				},
+				"btoolIsChampsVide": {
+					"type": "button",
+					"text": "toolIsChampsVide",
+					"top": 180,
+					"left": 57,
+					"width": 167,
+					"height": 44,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btoolIsChampsVide.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 29,
+	"geometryStamp": 38,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
