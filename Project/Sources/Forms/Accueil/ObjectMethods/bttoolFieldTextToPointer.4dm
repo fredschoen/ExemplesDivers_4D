@@ -1,7 +1,9 @@
 //cas1: la structure
-$champs:="[Parametre]Nom"
-$ptr:=toolFieldTextToPointer($champs)
-ALERT:C41("type du champs="+String:C10(Type:C295($ptr->)))
-//cas2: le contenu
-ALL RECORDS:C47([Parametre:1])
-ALERT:C41("valeur du champs="+$ptr->)
+$ptr:=toolFieldTextToPointer(Form:C1466.fieldText)
+
+$txt:=""
+$txt+="type du champs="+String:C10(Type:C295($ptr->))
+$txt+=Char:C90(Carriage return:K15:38)
+$txt+="valeur du champs="+String:C10($ptr->)
+
+ALERT:C41($txt)

@@ -12,21 +12,7 @@
 	"rightMargin": 20,
 	"bottomMargin": 20,
 	"events": [
-		"onLoad",
-		"onPageChange",
-		"onValidate",
-		"onClick",
-		"onDoubleClick",
-		"onOutsideCall",
-		"onBeginDragOver",
-		"onDragOver",
-		"onDrop",
-		"onAfterKeystroke",
-		"onMenuSelect",
-		"onPluginArea",
-		"onAfterEdit",
-		"onTimer",
-		"onBoundVariableChange"
+		"onLoad"
 	],
 	"windowTitle": "window title",
 	"destination": "detailScreen",
@@ -42,7 +28,7 @@
 					"top": 68,
 					"left": 52,
 					"width": 158,
-					"height": 41,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
@@ -51,10 +37,10 @@
 				"bVariant": {
 					"type": "button",
 					"text": "Variant",
-					"top": 68,
-					"left": 214,
+					"top": 94,
+					"left": 57,
 					"width": 133,
-					"height": 41,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
@@ -66,7 +52,7 @@
 					"top": 116,
 					"left": 57,
 					"width": 167,
-					"height": 44,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
@@ -125,27 +111,30 @@
 					],
 					"method": "ObjectMethods/bAffListeHierarchique.4dm"
 				},
-				"btoolIsChampsVide": {
-					"type": "button",
-					"text": "toolIsChampsVide",
-					"top": 180,
-					"left": 57,
-					"width": 167,
-					"height": 44,
+				"Zone de saisie": {
+					"type": "input",
+					"left": 226,
+					"top": 67,
+					"width": 183,
+					"height": 17,
+					"dataSource": "Form:C1466.fieldText",
 					"events": [
-						"onClick"
+						"onLoad"
 					],
-					"method": "ObjectMethods/btoolIsChampsVide.4dm"
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/hFieldText"
+					}
 				}
 			}
 		}
 	],
-	"geometryStamp": 38,
+	"geometryStamp": 56,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {}
 		}
-	}
+	},
+	"method": "method.4dm"
 }
