@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="demo 4D VIEW PRO" uuid="3FC2399C58C14C0BA07BE29248F45AA0" collation_locale="fr">
+<base name="ViewPro_4D" uuid="3FC2399C58C14C0BA07BE29248F45AA0" collation_locale="fr">
 	<schema name="DEFAULT_SCHEMA"/>
 	<table name="Table1" uuid="3135F39D077E4714941D5FE5E6C3F84C" id="1">
 		<field name="ID" uuid="5DE89725F03444CDA57CAEFA345A0169" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
@@ -20,7 +20,7 @@
 			<table_ref uuid="3135F39D077E4714941D5FE5E6C3F84C" name="Table1"/>
 		</field_ref>
 	</index>
-	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0">
+	<base_extra>
 		<journal_file journal_file_enabled="true"/>
 	</base_extra>
 </base>
