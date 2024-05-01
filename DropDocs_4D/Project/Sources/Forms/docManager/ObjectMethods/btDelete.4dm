@@ -12,7 +12,7 @@ If (Form event code:C388=On Clicked:K2:4)
 		ALERT:C41("ok")
 		Form:C1466.tblDoc_es:=ds:C1482.tblDoc.all()
 		//blanchir la zone web
-		toolWebZoneEmpty("GedPieceFile")
+		toolWebZoneEmpty("WebZoneDoc")
 		
 	End if 
 	

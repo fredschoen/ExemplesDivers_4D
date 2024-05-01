@@ -26,6 +26,10 @@
 					"shortcutAccel": true,
 					"shortcutKey": "Q",
 					"action": "quit"
+				},
+				{
+					"title": "Accueil",
+					"method": "Accueil"
 				}
 			]
 		},

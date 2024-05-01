@@ -1,3 +1,5 @@
+var $form_o : Object
+var $win_i : Integer
 
 If (Form event code:C388=On Drop:K2:12)
 	
@@ -92,10 +94,20 @@ End if
 If (FORM Event:C1606.code=On Selection Change:K2:29)
 	If (Form:C1466.tblDoc_e=Null:C1517)
 		
-		toolWebZoneEmpty("GedPieceFile")
+		toolWebZoneEmpty("WebZoneDoc")
 		return 
 	End if 
 	
-	WA OPEN URL:C1020(*; "GedPieceFile"; Form:C1466.tblDoc_e.showInWebZone())
+	WA OPEN URL:C1020(*; "WebZoneDoc"; Form:C1466.tblDoc_e.showInWebZone())
 	
+End if 
+
+If (Form event code:C388=On Double Clicked:K2:5)
+	If (Form:C1466.tblDoc_e#Null:C1517)
+		$form_o:=New object:C1471()
+		$form_o.tblDoc_e:=Form:C1466.tblDoc_e
+		$win_i:=Open form window:C675("DocDetail")
+		DIALOG:C40("DocDetail"; $form_o)
+		CLOSE WINDOW:C154($win_i)
+	End if 
 End if 

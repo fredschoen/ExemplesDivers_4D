@@ -36,14 +36,15 @@
 		},
 		{
 			"objects": {
-				"ListBox1": {
+				"ListBoxDoc": {
 					"type": "listbox",
-					"left": 44,
+					"left": 43,
 					"top": 78,
 					"width": 327,
 					"height": 395,
 					"events": [
 						"onLoad",
+						"onDoubleClick",
 						"onDrop",
 						"onSelectionChange"
 					],
@@ -59,7 +60,7 @@
 					"dataSource": "Form:C1466.tblDoc_es",
 					"currentItemSource": "Form:C1466.tblDoc_e",
 					"metaSource": "",
-					"method": "ObjectMethods/ListBox1.4dm",
+					"method": "ObjectMethods/ListBoxDoc.4dm",
 					"dropping": "custom",
 					"selectedItemsSource": "Form:C1466.tblDocSel_es",
 					"dragging": "custom",
@@ -153,7 +154,7 @@
 					],
 					"method": "ObjectMethods/btSave.4dm"
 				},
-				"GedPieceFile": {
+				"WebZoneDoc": {
 					"type": "webArea",
 					"left": 397,
 					"top": 13,
@@ -192,7 +193,7 @@
 			}
 		}
 	],
-	"geometryStamp": 42,
+	"geometryStamp": 47,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
