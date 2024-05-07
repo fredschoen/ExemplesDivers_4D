@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="ExemplesDivers_4D" uuid="9588B668CA50A94FB92EFEAAB70FB7DE" collation_locale="fr">
+<base name="Divers_4D" uuid="9588B668CA50A94FB92EFEAAB70FB7DE" collation_locale="fr">
 	<schema name="DEFAULT_SCHEMA"/>
 	<table name="Parametre" uuid="8EA22EBDE95EF740B11C8B0134E55F9B" id="1">
 		<field name="ID" uuid="846D17EB7BBFD74B92D7DA4DDCC14650" type="4" unique="true" autosequence="true" not_null="true" id="1"/>

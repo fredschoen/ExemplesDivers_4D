@@ -9,8 +9,8 @@
 	"windowMinHeight": 0,
 	"windowMaxWidth": 32767,
 	"windowMaxHeight": 32767,
-	"rightMargin": 20,
-	"bottomMargin": 20,
+	"rightMargin": 2,
+	"bottomMargin": 2,
 	"events": [
 		"onLoad",
 		"onPageChange",
@@ -38,9 +38,9 @@
 			"objects": {
 				"hlGenreQuoi": {
 					"type": "list",
-					"left": 48,
+					"left": 24,
 					"top": 38,
-					"width": 216,
+					"width": 240,
 					"height": 192,
 					"events": [
 						"onLoad",
@@ -71,11 +71,31 @@
 					"dataSource": "Form:C1466.Niv1",
 					"enterable": false,
 					"fill": "transparent"
+				},
+				"bTrace": {
+					"type": "button",
+					"text": "Trace",
+					"top": 241,
+					"left": 0,
+					"width": 40,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"borderStyle": "solid",
+					"fontSize": 9,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t",
+					"method": "ObjectMethods/bTrace.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 18,
+	"geometryStamp": 25,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

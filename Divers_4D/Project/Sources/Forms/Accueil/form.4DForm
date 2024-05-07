@@ -22,17 +22,17 @@
 		},
 		{
 			"objects": {
-				"bttoolFieldTextToPointer": {
+				"bToolFieldTextToPointer": {
 					"type": "button",
 					"text": "toolFieldTextToPointer",
-					"top": 68,
+					"top": 66,
 					"left": 52,
 					"width": 158,
 					"height": 20,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/bttoolFieldTextToPointer.4dm"
+					"method": "ObjectMethods/bToolFieldTextToPointer.4dm"
 				},
 				"bVariant": {
 					"type": "button",
@@ -124,11 +124,31 @@
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/hFieldText"
 					}
+				},
+				"bTrace": {
+					"type": "button",
+					"text": "Trace",
+					"top": 153,
+					"left": 16,
+					"width": 40,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"borderStyle": "solid",
+					"fontSize": 9,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t",
+					"method": "ObjectMethods/bTrace.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 56,
+	"geometryStamp": 68,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

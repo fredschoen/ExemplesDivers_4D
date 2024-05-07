@@ -1,5 +1,12 @@
 //%attributes = {}
 //LstHie_Creer
+/*exemple:
+Nom.       Niv1.  Niv2.      
+GenreQuoi  ""     Action;CoDr
+GenreQuoi  Action Anglais;Français
+GenreQuoi  CoDr   Anglais;Français
+          
+*/
 var hlGenreQuoi; $hSousListeN1 : Integer
 var $i : Integer
 hlGenreQuoi:=New list:C375
