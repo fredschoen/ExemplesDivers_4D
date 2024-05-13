@@ -25,7 +25,7 @@
 				"bToolFieldTextToPointer": {
 					"type": "button",
 					"text": "toolFieldTextToPointer",
-					"top": 66,
+					"top": 68,
 					"left": 52,
 					"width": 158,
 					"height": 20,
@@ -148,7 +148,7 @@
 			}
 		}
 	],
-	"geometryStamp": 68,
+	"geometryStamp": 70,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
