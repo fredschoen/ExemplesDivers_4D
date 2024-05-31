@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="Xml_4D" uuid="62DD3489C422454EB018CBD06289E596" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="t1" uuid="BE979596B676429DA1C49D64A3F88950" id="1">
+		<field name="ID" uuid="DF917616AADA49E7B7B2A76DDF498D19" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="c1" uuid="4B6A3FCB5DDA4315BEA287EC1938A32E" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="c2" uuid="BC4D554AD55F4710A05B8FBC82D00311" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="c3" uuid="ED3D0FE57CA345E38D3968DBC9CBC4FD" type="10" limiting_length="255" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="DF917616AADA49E7B7B2A76DDF498D19"/>
+		<table_extra input_form="Formulaire1" output_form="Formulaire2" trigger_insert="true" trigger_update="true">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="40" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="t2" uuid="E8558F7BA846491EA7B1ED1C1FA5CDED" id="2">
+		<field name="ID" uuid="92FB9993827245089A19AFA97F2703C6" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="c1" uuid="F000C070CFF24351898311048AA2E665" type="10" limiting_length="255" never_null="true" id="2"/>
+		<primary_key field_name="ID" field_uuid="92FB9993827245089A19AFA97F2703C6"/>
+		<table_extra input_form="Formulaire1" output_form="Formulaire2">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="240" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="0253B7444BCE434EAC7326AF684FD3B0" type="7">
+		<field_ref uuid="DF917616AADA49E7B7B2A76DDF498D19" name="ID">
+			<table_ref uuid="BE979596B676429DA1C49D64A3F88950" name="t1"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="F88866E2C8F046B29EF04AB12A90CE23" type="7">
+		<field_ref uuid="92FB9993827245089A19AFA97F2703C6" name="ID">
+			<table_ref uuid="E8558F7BA846491EA7B1ED1C1FA5CDED" name="t2"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

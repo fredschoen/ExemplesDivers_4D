@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="Divers_4D" uuid="9588B668CA50A94FB92EFEAAB70FB7DE" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Parametre" uuid="8EA22EBDE95EF740B11C8B0134E55F9B" id="1">
+		<field name="ID" uuid="846D17EB7BBFD74B92D7DA4DDCC14650" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Nom" uuid="282579EAEE3326409DB194C8B6BF6090" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Niv1" uuid="0198149734997D40ADB695E1C04417CC" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Niv2" uuid="835A2C92831B22409D992A15B075CF67" type="10" limiting_length="255" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="846D17EB7BBFD74B92D7DA4DDCC14650"/>
+		<table_extra output_form="Formulaire1" input_form="Formulaire2">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="40" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="95397EE954E8544D982C014963C3FB1E" type="7">
+		<field_ref uuid="846D17EB7BBFD74B92D7DA4DDCC14650" name="ID">
+			<table_ref uuid="8EA22EBDE95EF740B11C8B0134E55F9B" name="Parametre"/>
+		</field_ref>
+	</index>
+</base>

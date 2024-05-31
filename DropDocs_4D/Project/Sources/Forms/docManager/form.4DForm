@@ -1,0 +1,205 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"ListBoxDoc": {
+					"type": "listbox",
+					"left": 43,
+					"top": 78,
+					"width": 327,
+					"height": 395,
+					"events": [
+						"onLoad",
+						"onDoubleClick",
+						"onDrop",
+						"onSelectionChange"
+					],
+					"headerHeight": "24px",
+					"fill": "#F5FBFF",
+					"alternateFill": "#E1F2FC",
+					"hideExtraBlankRows": false,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.tblDoc_es",
+					"currentItemSource": "Form:C1466.tblDoc_e",
+					"metaSource": "",
+					"method": "ObjectMethods/ListBoxDoc.4dm",
+					"dropping": "custom",
+					"selectedItemsSource": "Form:C1466.tblDocSel_es",
+					"dragging": "custom",
+					"columns": [
+						{
+							"header": {
+								"text": "pos",
+								"name": "Entête2"
+							},
+							"name": "gedDate2",
+							"footer": {
+								"name": "Pied2"
+							},
+							"width": 40,
+							"dataSource": "This:C1470.posDoc",
+							"enterable": false
+						},
+						{
+							"header": {
+								"text": "nomDoc",
+								"name": "Entête1"
+							},
+							"name": "gedDate1",
+							"footer": {
+								"name": "Pied1"
+							},
+							"width": 240,
+							"dataSource": "This:C1470.nomDoc",
+							"enterable": false
+						},
+						{
+							"header": {
+								"text": "txt",
+								"name": "Entête8"
+							},
+							"name": "gedDate",
+							"footer": {
+								"name": "Pied3"
+							},
+							"width": 55,
+							"dataSource": "This:C1470.extDoc",
+							"enterable": false
+						}
+					]
+				},
+				"TextblDoc5": {
+					"type": "text",
+					"top": 18,
+					"left": 44,
+					"width": 165,
+					"height": 16,
+					"text": "Documents liés",
+					"class": "cuLabel",
+					"right": 209,
+					"sizingY": "fixed",
+					"sizingX": "fixed",
+					"fontWeight": "bold"
+				},
+				"Zone de saisie": {
+					"type": "input",
+					"left": 44,
+					"top": 493,
+					"width": 303,
+					"height": 17,
+					"dataSource": "Form:C1466.tblDoc_e.nomDoc",
+					"enterable": false,
+					"fill": "automatic",
+					"borderStyle": "none"
+				},
+				"trace": {
+					"type": "button",
+					"text": "trace",
+					"top": 372,
+					"left": 8,
+					"width": 51,
+					"height": 32,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/trace.4dm"
+				},
+				"btSave": {
+					"type": "button",
+					"text": "sauve",
+					"top": 568,
+					"left": 68,
+					"width": 172,
+					"height": 45,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btSave.4dm"
+				},
+				"WebZoneDoc": {
+					"type": "webArea",
+					"left": 397,
+					"top": 13,
+					"width": 413,
+					"height": 590,
+					"dataSource": "",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"borderStyle": "system",
+					"bottom": 603,
+					"webEngine": "system"
+				},
+				"btDelete": {
+					"type": "button",
+					"text": "supprimer",
+					"top": 23,
+					"left": 221,
+					"width": 133,
+					"height": 35,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDelete.4dm"
+				},
+				"Zone de saisie1": {
+					"type": "input",
+					"left": 44,
+					"top": 516,
+					"width": 303,
+					"height": 17,
+					"dataSource": "Form:C1466.tblDoc_e.extDoc",
+					"enterable": false,
+					"fill": "automatic",
+					"borderStyle": "none"
+				}
+			}
+		}
+	],
+	"geometryStamp": 47,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

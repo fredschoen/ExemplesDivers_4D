@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="MiroringAval" uuid="9615721A01694E3B8670DA3CBB05DBD8" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Table_1" uuid="5C65422400234476A548C550283A582A" id="1">
+		<field name="ID" uuid="FF06BEE580FF472FBCCADDBEA4CF9CC8" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Champ_2" uuid="658F296A05B1436381B7D3A85526827B" type="10" limiting_length="255" id="2"/>
+		<field name="Champ_3" uuid="E941FF97C96A41B29D4447AD24D471A6" type="10" limiting_length="255" id="3"/>
+		<primary_key field_name="ID" field_uuid="FF06BEE580FF472FBCCADDBEA4CF9CC8"/>
+		<table_extra input_form="Formulaire2" output_form="Formulaire1">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="40" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Table_2" uuid="6504EAE25E2C4459AF707EA4ED38B095" id="2">
+		<field name="ID" uuid="FD5B02E2627A4213817A31C5EDB05512" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Champ_2" uuid="63381EE657EB4E14A7990F715B3328D8" type="10" limiting_length="255" id="2"/>
+		<field name="Champ_3" uuid="F7A0A49EA182452F9A7442C7D2BD55B5" type="10" limiting_length="255" id="3"/>
+		<primary_key field_name="ID" field_uuid="FD5B02E2627A4213817A31C5EDB05512"/>
+		<table_extra output_form="Formulaire1">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="240" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="40A35E27D020410C93DE74A69B41BC1F" type="7">
+		<field_ref uuid="FD5B02E2627A4213817A31C5EDB05512" name="ID">
+			<table_ref uuid="6504EAE25E2C4459AF707EA4ED38B095" name="Table_2"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B10D3F4F6D244A39A9FB1C7F954BB47D" type="7">
+		<field_ref uuid="FF06BEE580FF472FBCCADDBEA4CF9CC8" name="ID">
+			<table_ref uuid="5C65422400234476A548C550283A582A" name="Table_1"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

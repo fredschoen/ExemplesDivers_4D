@@ -1,0 +1,158 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Générer PDF": {
+					"type": "button",
+					"text": "Générer PDF",
+					"top": 104,
+					"left": 806,
+					"width": 118,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Générer PDF.4dm"
+				},
+				"Générer PDF1": {
+					"type": "button",
+					"text": "Presse papier",
+					"top": 138,
+					"left": 806,
+					"width": 118,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Générer PDF1.4dm"
+				},
+				"WP_AreaObj": {
+					"type": "write",
+					"top": 91,
+					"left": 1,
+					"width": 790,
+					"height": 540,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "WP_AreaVar",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"borderStyle": "none",
+					"method": "ObjectMethods/WP_AreaObj.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onSelectionChange",
+						"onAfterEdit"
+					]
+				},
+				"WPtoolbar": {
+					"type": "subform",
+					"top": 1,
+					"left": 1,
+					"width": 790,
+					"height": 95,
+					"sizingX": "grow",
+					"detailForm": "WP_Toolbar",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/WPtoolbar.4dm"
+				},
+				"Générer PDF2": {
+					"type": "button",
+					"text": "Imprimer",
+					"top": 175,
+					"left": 806,
+					"width": 118,
+					"height": 35,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Générer PDF2.4dm"
+				},
+				"zTexte": {
+					"type": "input",
+					"left": 61,
+					"top": 286,
+					"width": 74,
+					"height": 129,
+					"dataSource": "Form:C1466.vTexte",
+					"styledText": true
+				},
+				"Insert_Picture": {
+					"type": "button",
+					"text": "Insert_Picture",
+					"top": 216,
+					"left": 806,
+					"width": 118,
+					"height": 34,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Insert_Picture.4dm"
+				},
+				"sauver_Write": {
+					"type": "button",
+					"text": "sauver_Write",
+					"top": 270,
+					"left": 806,
+					"width": 118,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/sauver_Write.4dm"
+				}
+			}
+		}
+	],
+	"geometryStamp": 42,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}

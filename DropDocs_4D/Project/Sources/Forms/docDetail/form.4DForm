@@ -1,0 +1,76 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"WebZoneDoc": {
+					"type": "webArea",
+					"left": 0,
+					"top": 0,
+					"width": 413,
+					"height": 590,
+					"dataSource": "",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"borderStyle": "system",
+					"bottom": 590,
+					"webEngine": "system"
+				},
+				"trace": {
+					"type": "button",
+					"text": "trace",
+					"top": 0,
+					"left": 0,
+					"width": 41,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/trace.4dm"
+				}
+			}
+		}
+	],
+	"geometryStamp": 51,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

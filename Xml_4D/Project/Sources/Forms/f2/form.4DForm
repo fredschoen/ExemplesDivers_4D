@@ -1,0 +1,232 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Zone de saisie": {
+					"type": "input",
+					"left": 130,
+					"top": 71,
+					"width": 198,
+					"height": 17,
+					"dataSource": "vName"
+				},
+				"Zone de saisie1": {
+					"type": "input",
+					"left": 130,
+					"top": 99,
+					"width": 198,
+					"height": 17,
+					"dataSource": "vRef"
+				},
+				"Zone de saisie2": {
+					"type": "input",
+					"left": 130,
+					"top": 136,
+					"width": 211,
+					"height": 49,
+					"dataSource": "vPos"
+				},
+				"Popup Liste déroulante": {
+					"type": "dropdown",
+					"left": 48,
+					"top": 26,
+					"width": 120,
+					"height": 25,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "atNames",
+					"method": "ObjectMethods/Popup Liste déroulante.4dm"
+				},
+				"DateEntry": {
+					"type": "subform",
+					"top": 211,
+					"left": 130,
+					"width": 138,
+					"height": 25,
+					"dataSource": "vDate",
+					"dataSourceTypeHint": "date",
+					"detailForm": "DateEntry",
+					"hideFocusRing": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/DateEntry.4dm",
+					"events": [
+						"onLoad"
+					],
+					"focusable": true,
+					"borderStyle": "solid"
+				},
+				"CMOOV_29": {
+					"type": "radio",
+					"top": 308,
+					"left": 385,
+					"width": 13,
+					"height": 24,
+					"dataSource": "bStatutB1_3",
+					"radioGroup": "Groupe40",
+					"events": [
+						"onClick"
+					]
+				},
+				"CMOOV_30": {
+					"type": "radio",
+					"top": 308,
+					"left": 239,
+					"width": 13,
+					"height": 24,
+					"dataSource": "bStatutB1_1",
+					"radioGroup": "Groupe40",
+					"events": [
+						"onClick"
+					]
+				},
+				"CMOOV_31": {
+					"type": "radio",
+					"top": 308,
+					"left": 312,
+					"width": 13,
+					"height": 24,
+					"dataSource": "bStatutB1_2",
+					"radioGroup": "Groupe40",
+					"events": [
+						"onClick"
+					]
+				},
+				"CMOOV_32": {
+					"type": "text",
+					"top": 282,
+					"left": 219,
+					"width": 55,
+					"height": 13,
+					"class": "Ecran_T11",
+					"textAlign": "center",
+					"text": "ACCEPTÉ"
+				},
+				"CMOOV_33": {
+					"type": "text",
+					"top": 282,
+					"left": 292,
+					"width": 55,
+					"height": 13,
+					"class": "Ecran_T11",
+					"textAlign": "center",
+					"text": "REFUSÉ"
+				},
+				"CMOOV_34": {
+					"type": "text",
+					"top": 282,
+					"left": 365,
+					"width": 55,
+					"height": 13,
+					"class": "Ecran_T11",
+					"textAlign": "center",
+					"text": "PRESENTÉ"
+				},
+				"CMOOV_35": {
+					"type": "text",
+					"top": 307,
+					"left": 56,
+					"width": 149,
+					"height": 16,
+					"class": "Ecran_N10",
+					"textAlign": "center",
+					"text": "SOCIETE GENERALE"
+				},
+				"bFred1": {
+					"type": "radio",
+					"text": "uuu",
+					"top": 381,
+					"left": 232,
+					"width": 59,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"radioGroup": "GroupeFred"
+				},
+				"bFred2": {
+					"type": "radio",
+					"text": "ddd",
+					"top": 381,
+					"left": 334,
+					"width": 59,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"radioGroup": "GroupeFred"
+				}
+			},
+			"entryOrder": [
+				"Popup Liste déroulante",
+				"Zone de saisie",
+				"Zone de saisie1",
+				"Zone de saisie2",
+				"DateEntry",
+				"CMOOV_29",
+				"CMOOV_30",
+				"CMOOV_31",
+				"bFred1",
+				"bFred2"
+			]
+		}
+	],
+	"method": "method.4dm",
+	"geometryStamp": 52,
+	"editor": {
+		"groups": {
+			"Group1": [
+				"bFred1",
+				"bFred2"
+			],
+			"Groupe1": [
+				"CMOOV_29",
+				"CMOOV_30",
+				"CMOOV_31"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

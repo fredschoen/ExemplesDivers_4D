@@ -1,0 +1,12 @@
+userPreferences*
+.DS_Store
+formAttributes.json
+methodAttributes.json
+settings.4DSettings
+Data
+DerivedData
+data.ExternalData
+backupHistory.json
+*.journal
+*.4BK
+Cache
