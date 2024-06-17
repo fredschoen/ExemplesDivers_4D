@@ -1,0 +1,1 @@
+  //btChargerDocWR OUVRIR DOCUMENT (Plugin_Area;"C:\\PARTAGE\\TestWR_V15\\TestWR_V15.4dbase\\CONSULTATION_BB.4W7")WR SELECTION IMAGE DANS PAGE (Plugin_Area;1)image1:=WR Lire image selectionnee (Plugin_Area)WRITE PICTURE FILE("C:\\PARTAGE\\TestWR_V15\\TestWR_V15.4dbase\\image1.png";image1)

@@ -10,3 +10,6 @@ backupHistory.json
 *.journal
 *.4BK
 Cache
+WritePro_Images/V15/Preferences/Backup/Backup.xml
+WritePro_Images/V20/Project/Sources/folders.json
+WritePro_Images/V20/Project/Sources/menus.json
