@@ -26,7 +26,7 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
-	<index kind="regular" unique_keys="true" uuid="0253B7444BCE434EAC7326AF684FD3B0" type="7">
+	<index kind="regular" unique_keys="true" uuid="488BD851548FC8469DCAD0AD04CEA89C" type="1">
 		<field_ref uuid="DF917616AADA49E7B7B2A76DDF498D19" name="ID">
 			<table_ref uuid="BE979596B676429DA1C49D64A3F88950" name="t1"/>
 		</field_ref>
