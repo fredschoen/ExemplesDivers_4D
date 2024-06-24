@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="DropDocs" uuid="9A30F6017D3B40FCA82F3BCF992321F6" collation_locale="fr">
+<base name="DropDocs_4D" uuid="9A30F6017D3B40FCA82F3BCF992321F6" collation_locale="fr">
 	<schema name="DEFAULT_SCHEMA"/>
 	<table name="tblDoc" uuid="886209EC454E4CBFA5A7A25FB6D1456A" id="1">
 		<field name="ID" uuid="93E4C0DDCE5C4A619EEFFE2D563ABB70" type="4" unique="true" autosequence="true" not_null="true" id="1"/>

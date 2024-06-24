@@ -2,7 +2,6 @@
 //__ListeChamps4D
 $refDoc_h:=Open document:C264(""; "4DCatalog")
 CLOSE DOCUMENT:C267($refDoc_h)
-
 If (ok=0)
 	return 
 End if 
@@ -13,7 +12,7 @@ $file_f:=File:C1566(document; fk platform path:K87:2)  // pour test
 //__ListeChamps4D
 $txt:="idChamps"+Char:C90(Tab:K15:37)+"nomChamps"+Char:C90(Tab:K15:37)+"Type"+Char:C90(Tab:K15:37)+"Commentaire"+Char:C90(Carriage return:K15:38)
 //xml_Child_Ref0:=DOM Parse XML source("/Users/fredericschoen/Downloads/2024 01 24 catalog.xml")
-$xml_Child_Ref0:=DOM Parse XML source:C719($file_f.path)
+$xml_Child_Ref0:=DOM Parse XML source:C719($file_f.platformPath)
 $xml_Brother_Ref1:=DOM Get first child XML element:C723($xml_Child_Ref0)
 DOM GET XML ELEMENT NAME:C730($xml_Brother_Ref1; $ele)  //le 1er fils est le schéma
 $xml_Brother_Ref1:=DOM Get next sibling XML element:C724($xml_Brother_Ref1; $ele)
@@ -76,6 +75,8 @@ While (ok=1)
 								$type:="alpha"
 							: $attVal="12"
 								$type:="image"
+							: $attVal="15"
+								$type:="sousTable"
 							: $attVal="18"
 								$type:="blob"
 							: $attVal="21"
@@ -121,3 +122,4 @@ End while
 
 SET TEXT TO PASTEBOARD:C523($txt)
 ALERT:C41("cf. le presse papier")
+//SHOW ON DISK($file_f.platformPath)

@@ -26,8 +26,8 @@
 					"type": "button",
 					"text": "toolFieldTextToPointer",
 					"top": 68,
-					"left": 52,
-					"width": 158,
+					"left": 50,
+					"width": 100,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -38,8 +38,8 @@
 					"type": "button",
 					"text": "Variant",
 					"top": 94,
-					"left": 57,
-					"width": 133,
+					"left": 50,
+					"width": 100,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -50,8 +50,8 @@
 					"type": "button",
 					"text": "fixer titre",
 					"top": 116,
-					"left": 57,
-					"width": 167,
+					"left": 50,
+					"width": 100,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -60,9 +60,9 @@
 				},
 				"LB1": {
 					"type": "listbox",
-					"left": 228,
+					"left": 170,
 					"top": 116,
-					"width": 198,
+					"width": 200,
 					"height": 49,
 					"events": [
 						"onClick",
@@ -113,9 +113,9 @@
 				},
 				"Zone de saisie": {
 					"type": "input",
-					"left": 226,
+					"left": 170,
 					"top": 67,
-					"width": 183,
+					"width": 200,
 					"height": 17,
 					"dataSource": "Form:C1466.fieldText",
 					"events": [
@@ -144,11 +144,23 @@
 					"shortcutAlt": false,
 					"shortcutKey": "t",
 					"method": "ObjectMethods/bTrace.4dm"
+				},
+				"bListeChamps": {
+					"type": "button",
+					"text": "liste champs",
+					"top": 194,
+					"left": 50,
+					"width": 100,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bListeChamps.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 70,
+	"geometryStamp": 93,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
