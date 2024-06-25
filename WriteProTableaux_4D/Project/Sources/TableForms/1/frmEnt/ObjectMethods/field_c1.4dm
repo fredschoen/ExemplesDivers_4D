@@ -9,11 +9,11 @@ If (Form event code:C388=On Drop:K2:12)
 	C_TEXT:C284($vfileArray)
 	C_LONGINT:C283($n)
 	$n:=1
-	[tblPrescription:1]nomPrescription:2:=""
+	[tblPrescription:1]nom:2:=""
 	Repeat 
 		$vfileArray:=Get file from pasteboard:C976($n)
 		If ($vfileArray#"")
-			[tblPrescription:1]nomPrescription:2:=[tblPrescription:1]nomPrescription:2+Char:C90(Carriage return:K15:38)+$vfileArray
+			[tblPrescription:1]nom:2:=[tblPrescription:1]nom:2+Char:C90(Carriage return:K15:38)+$vfileArray
 			$n:=$n+1
 		End if 
 	Until ($vfileArray="")

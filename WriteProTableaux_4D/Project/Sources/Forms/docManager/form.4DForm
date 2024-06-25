@@ -39,7 +39,7 @@
 				"trace": {
 					"type": "button",
 					"text": "trace",
-					"top": 576,
+					"top": 610,
 					"left": 13,
 					"width": 40,
 					"height": 15,
@@ -58,7 +58,7 @@
 				"btSave": {
 					"type": "button",
 					"text": "sauver ordonnance",
-					"top": 434,
+					"top": 479,
 					"left": 89,
 					"width": 172,
 					"height": 45,
@@ -89,8 +89,7 @@
 					"events": [
 						"onDrop",
 						"onBeforeKeystroke",
-						"onSelectionChange",
-						"onBeginDragOver"
+						"onSelectionChange"
 					],
 					"headerHeight": "24px",
 					"fill": "#F5FBFF",
@@ -101,7 +100,7 @@
 					"horizontalLineStroke": "transparent",
 					"verticalLineStroke": "transparent",
 					"listboxType": "collection",
-					"dataSource": "Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1",
+					"dataSou&rce": "Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1",
 					"currentItemSource": "",
 					"metaSource": "",
 					"method": "ObjectMethods/ListBoxPrescriptions1.4dm",
@@ -113,14 +112,14 @@
 					"columns": [
 						{
 							"header": {
-								"text": "pos1",
-								"name": "cpos1"
+								"text": "pos",
+								"name": "Entête3"
 							},
-							"name": "nom2",
+							"name": "pos1",
 							"footer": {
-								"name": "Pied2"
+								"name": "Pied4"
 							},
-							"width": 50,
+							"width": 40,
 							"dataSource": "This:C1470.pos",
 							"enterable": false
 						},
@@ -141,9 +140,9 @@
 				},
 				"ListBoxDocAll": {
 					"type": "listbox",
-					"left": 44,
+					"left": 68,
 					"top": 35,
-					"width": 327,
+					"width": 303,
 					"height": 142,
 					"events": [
 						"onLoad",
@@ -158,7 +157,7 @@
 					"horizontalLineStroke": "transparent",
 					"verticalLineStroke": "transparent",
 					"listboxType": "collection",
-					"dataSource": "Form:C1466.prescription_c",
+					"dataSource": "Form:C1466.tblPrescription_es",
 					"currentItemSource": "Form:C1466.tblPrescription_e",
 					"metaSource": "",
 					"method": "ObjectMethods/ListBoxDocAll.4dm",
@@ -169,26 +168,9 @@
 						{
 							"header": {
 								"text": "nom",
-								"name": "enom1"
+								"name": "Entête6"
 							},
-							"name": "cpos",
-							"footer": {
-								"name": "Pied1"
-							},
-							"width": 50,
-							"dataSource": "This:C1470.pos",
-							"enterable": true,
-							"events": [
-								"onDataChange"
-							],
-							"method": "ObjectMethods/cpos.4dm"
-						},
-						{
-							"header": {
-								"text": "nom",
-								"name": "enom"
-							},
-							"name": "cnom",
+							"name": "gedDate6",
 							"footer": {
 								"name": "Pied6"
 							},
@@ -198,14 +180,38 @@
 							"events": [
 								"onDataChange"
 							],
-							"method": "ObjectMethods/cnom.4dm"
+							"method": "ObjectMethods/gedDate6.4dm"
 						}
 					]
+				},
+				"btAddPrescription": {
+					"type": "button",
+					"text": "+",
+					"top": 70,
+					"left": 19,
+					"width": 29,
+					"height": 29,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btAddPrescription.4dm"
+				},
+				"btDelPrescription": {
+					"type": "button",
+					"text": "-",
+					"top": 106,
+					"left": 19,
+					"width": 29,
+					"height": 29,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDelPrescription.4dm"
 				},
 				"btModele": {
 					"type": "button",
 					"text": "modifier modèle ordonnance",
-					"top": 528,
+					"top": 544,
 					"left": 89,
 					"width": 172,
 					"height": 45,
@@ -213,35 +219,11 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/btModele.4dm"
-				},
-				"btPrescription": {
-					"type": "button",
-					"text": "modifier liste prescriptions",
-					"top": 580,
-					"left": 89,
-					"width": 172,
-					"height": 45,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btPrescription.4dm"
-				},
-				"btDel": {
-					"type": "button",
-					"text": "-",
-					"top": 263,
-					"left": 13,
-					"width": 29,
-					"height": 29,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btDel.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 111,
+	"geometryStamp": 91,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

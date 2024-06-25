@@ -9,7 +9,18 @@ If (Form event code:C388=On Load:K2:1)
 	End if 
 	
 	Form:C1466.prescription1Dragged_o:=Null:C1517
-	Form:C1466.prescriptionDragged_t:=""
-	Form:C1466.tblPrescription_es:=ds:C1482.tblPrescription.all().orderBy("posPrescription")
+	Form:C1466.prescriptionDragged_o:=Null:C1517
+	Form:C1466.tblPrescription_es:=ds:C1482.tblPrescription.all().orderBy("pos")
 	Form:C1466.tblOrdonnance_e:=ds:C1482.tblOrdonnance.all().first()
+	var $e : cs:C1710.tblPrescriptionEntity
+	var $c : Collection
+	$c:=New collection:C1472()
+	For each ($e; Form:C1466.tblPrescription_es)
+		
+		$c.push($e)
+	End for each 
+	Form:C1466.prescription_c:=$c
+	
+	
 End if 
+

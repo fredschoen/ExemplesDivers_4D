@@ -89,7 +89,7 @@
 								"name": "Pied2"
 							},
 							"width": 50,
-							"dataSource": "This:C1470.posPrescription",
+							"dataSource": "This:C1470.pos",
 							"enterable": true,
 							"events": [
 								"onDataChange"
@@ -98,7 +98,7 @@
 						},
 						{
 							"header": {
-								"text": "nomPrescription",
+								"text": "nom",
 								"name": "Entête6"
 							},
 							"name": "gedDate6",
@@ -106,7 +106,7 @@
 								"name": "Pied6"
 							},
 							"width": 250,
-							"dataSource": "This:C1470.nomPrescription",
+							"dataSource": "This:C1470.nom",
 							"enterable": true,
 							"events": [
 								"onDataChange"
