@@ -39,7 +39,7 @@
 				"trace": {
 					"type": "button",
 					"text": "trace",
-					"top": 576,
+					"top": 656,
 					"left": 13,
 					"width": 40,
 					"height": 15,
@@ -58,8 +58,8 @@
 				"btSave": {
 					"type": "button",
 					"text": "sauver ordonnance",
-					"top": 442,
-					"left": 89,
+					"top": 514,
+					"left": 97,
 					"width": 172,
 					"height": 45,
 					"events": [
@@ -67,23 +67,10 @@
 					],
 					"method": "ObjectMethods/btSave.4dm"
 				},
-				"WebZoneDoc": {
-					"type": "webArea",
-					"left": 409,
-					"top": 35,
-					"width": 413,
-					"height": 590,
-					"dataSource": "",
-					"sizingX": "grow",
-					"sizingY": "grow",
-					"borderStyle": "system",
-					"bottom": 625,
-					"webEngine": "system"
-				},
 				"ListBoxPrescriptions1": {
 					"type": "listbox",
 					"left": 44,
-					"top": 197,
+					"top": 237,
 					"width": 327,
 					"height": 112,
 					"events": [
@@ -113,7 +100,7 @@
 					"columns": [
 						{
 							"header": {
-								"text": "pos1",
+								"text": "pos",
 								"name": "cpos1"
 							},
 							"name": "nom2",
@@ -126,7 +113,7 @@
 						},
 						{
 							"header": {
-								"text": "nom1",
+								"text": "nom",
 								"name": "enom1"
 							},
 							"name": "nom1",
@@ -141,8 +128,8 @@
 				},
 				"ListBoxDocAll": {
 					"type": "listbox",
-					"left": 44,
-					"top": 35,
+					"left": 39,
+					"top": 69,
 					"width": 327,
 					"height": 142,
 					"events": [
@@ -205,8 +192,8 @@
 				"btModele": {
 					"type": "button",
 					"text": "modifier modèle ordonnance",
-					"top": 528,
-					"left": 89,
+					"top": 600,
+					"left": 194,
 					"width": 172,
 					"height": 45,
 					"events": [
@@ -217,8 +204,8 @@
 				"btPrescription": {
 					"type": "button",
 					"text": "modifier liste prescriptions",
-					"top": 580,
-					"left": 89,
+					"top": 600,
+					"left": 2,
 					"width": 172,
 					"height": 45,
 					"events": [
@@ -229,7 +216,7 @@
 				"btDel1": {
 					"type": "button",
 					"text": "-",
-					"top": 239,
+					"top": 279,
 					"left": 13,
 					"width": 29,
 					"height": 29,
@@ -240,8 +227,8 @@
 				},
 				"ListBoxPrescriptions2": {
 					"type": "listbox",
-					"left": 44,
-					"top": 319,
+					"left": 49,
+					"top": 377,
 					"width": 327,
 					"height": 112,
 					"events": [
@@ -271,7 +258,7 @@
 					"columns": [
 						{
 							"header": {
-								"text": "pos2",
+								"text": "pos",
 								"name": "cpos2"
 							},
 							"name": "nom3",
@@ -284,7 +271,7 @@
 						},
 						{
 							"header": {
-								"text": "nom2",
+								"text": "nom",
 								"name": "enom2"
 							},
 							"name": "nom4",
@@ -300,7 +287,7 @@
 				"btDel2": {
 					"type": "button",
 					"text": "-",
-					"top": 361,
+					"top": 401,
 					"left": 13,
 					"width": 29,
 					"height": 29,
@@ -308,11 +295,68 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/btDel2.4dm"
+				},
+				"WParea": {
+					"type": "write",
+					"top": 125,
+					"left": 396,
+					"width": 880,
+					"height": 590,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "WParea",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"borderStyle": "none",
+					"method": "ObjectMethods/WParea.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onSelectionChange",
+						"onAfterEdit"
+					],
+					"focusable": false,
+					"enterable": false,
+					"showHeaders": true,
+					"showFooters": true,
+					"showBackground": true,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"showHTMLWysiwyg": false,
+					"showPageFrames": false,
+					"showReferences": false
+				},
+				"Texte": {
+					"type": "text",
+					"text": "Prescriptions disponibles",
+					"top": 38,
+					"left": 39,
+					"width": 230,
+					"height": 15
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "zones 1",
+					"top": 221,
+					"left": 44,
+					"width": 230,
+					"height": 15
+				},
+				"Texte2": {
+					"type": "text",
+					"text": "zones 1",
+					"top": 359,
+					"left": 49,
+					"width": 230,
+					"height": 15
 				}
 			}
 		}
 	],
-	"geometryStamp": 126,
+	"geometryStamp": 172,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

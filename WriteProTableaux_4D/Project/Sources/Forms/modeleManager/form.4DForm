@@ -44,7 +44,7 @@
 					"height": 590,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"dataSource": "WParea",
+					"dataSource": "WParea_Design",
 					"hideFocusRing": true,
 					"scrollbarVertical": "automatic",
 					"scrollbarHorizontal": "automatic",
