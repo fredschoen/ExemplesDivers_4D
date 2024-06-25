@@ -1,42 +1,48 @@
 If (Form event code:C388=On Begin Drag Over:K2:44)
-	Form:C1466.prescription1Dragged:=Form:C1466.tblPrescription_e.nomPrescription
+	Form:C1466.prescription1Dragged_o:=Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1[Form:C1466.prescription1PosCurElt-1]
+	
 End if 
 
 If (Form event code:C388=On Drop:K2:12)
 	
 	Case of 
 			/////////////////////////////////////////////
-		: (Form:C1466.prescriptionDragged#"")  //le drag vient de la liste générale
+		: (Form:C1466.prescriptionDragged_t#"")  //le drag vient de la liste générale
 			
-			Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1.push(New object:C1471("pos"; 99; "nom"; Form:C1466.prescriptionDragged))
-			Form:C1466.prescriptionDragged:=""
+			Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1.push(New object:C1471("pos"; 999; "nom"; Form:C1466.prescriptionDragged_t))
+			// redefinir la position de chacun.
+			$i:=0
+			For each ($elt; Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1)
+				$i+=1
+				$elt.pos:=$i
+			End for each 
+			
+			Form:C1466.prescriptionDragged_t:=""
 			
 			/////////////////////////////////////////////////////
-		: (Form:C1466.prescription1Dragged#"")  //on vient de la liste 1
-			If (Undefined:C82(FORM Event:C1606.row))  // on fait un drop bizarre
+		: (Form:C1466.prescription1Dragged_o#Null:C1517)  //on vient de la liste 1
+			If (Undefined:C82(FORM Event:C1606.row))  // si on fait un drop "exotique"
 				return 
 			End if 
-			$x:=Form:C1466.prescription1PosCurElt
-			//// On sauvegarge la nouvelle position avec un retrait de 0,1
-			//Form.tblDoc_e.posDoc:=FORM Event.row-0.1
-			//Form.tblDoc_e.save()
 			
-			//// On génére un nouvel ordre.
-			//Form.tblDoc_es:=Form.tblDoc_es.orderBy("posDoc")
+			//modifier l'élément du "begin drag"
+			$posDrop:=Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1[FORM Event:C1606.row-1].pos-0.1
+			Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1[Form:C1466.prescription1PosCurElt-1].pos:=$posDrop
 			
-			//// On redefinit la position de chacun.
-			//For each ($tblDoc_e; Form.tblDoc_es)
-			//$tblDoc_e.posDoc:=$tblDoc_e.indexOf(Form.tblDoc_es)+1
-			//$tblDoc_e.save()
-			//End for each 
+			// tri
+			Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1:=Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1.orderBy("pos")
 			
-			//// On recharge la liste.
-			//Form.tblDoc_es.refresh()
+			// redefinir la position de chacun.
+			$i:=0
+			For each ($elt; Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1)
+				$i+=1
+				$elt.pos:=$i
+			End for each 
 			
-			Form:C1466.prescription1Dragged:=""
+			//init le drag
+			Form:C1466.prescription1Dragged_o:=Null:C1517
 			
 	End case 
-	
 	
 End if 
 

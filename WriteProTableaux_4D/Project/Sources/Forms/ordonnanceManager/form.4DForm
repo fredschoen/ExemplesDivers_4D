@@ -39,7 +39,7 @@
 				"trace": {
 					"type": "button",
 					"text": "trace",
-					"top": 610,
+					"top": 576,
 					"left": 13,
 					"width": 40,
 					"height": 15,
@@ -58,7 +58,7 @@
 				"btSave": {
 					"type": "button",
 					"text": "sauver ordonnance",
-					"top": 479,
+					"top": 434,
 					"left": 89,
 					"width": 172,
 					"height": 45,
@@ -89,7 +89,8 @@
 					"events": [
 						"onDrop",
 						"onBeforeKeystroke",
-						"onSelectionChange"
+						"onSelectionChange",
+						"onBeginDragOver"
 					],
 					"headerHeight": "24px",
 					"fill": "#F5FBFF",
@@ -112,19 +113,6 @@
 					"columns": [
 						{
 							"header": {
-								"text": "pos",
-								"name": "Entête3"
-							},
-							"name": "posPrescription1",
-							"footer": {
-								"name": "Pied4"
-							},
-							"width": 40,
-							"dataSource": "This:C1470.pos",
-							"enterable": false
-						},
-						{
-							"header": {
 								"text": "nomPrescription1",
 								"name": "Entête4"
 							},
@@ -140,9 +128,9 @@
 				},
 				"ListBoxDocAll": {
 					"type": "listbox",
-					"left": 68,
+					"left": 44,
 					"top": 35,
-					"width": 303,
+					"width": 327,
 					"height": 142,
 					"events": [
 						"onLoad",
@@ -168,9 +156,9 @@
 						{
 							"header": {
 								"text": "nomPrescription",
-								"name": "Entête6"
+								"name": "eNomPrescription"
 							},
-							"name": "gedDate6",
+							"name": "cNomPrescription",
 							"footer": {
 								"name": "Pied6"
 							},
@@ -180,38 +168,14 @@
 							"events": [
 								"onDataChange"
 							],
-							"method": "ObjectMethods/gedDate6.4dm"
+							"method": "ObjectMethods/cNomPrescription.4dm"
 						}
 					]
-				},
-				"btAddPrescription": {
-					"type": "button",
-					"text": "+",
-					"top": 70,
-					"left": 19,
-					"width": 29,
-					"height": 29,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btAddPrescription.4dm"
-				},
-				"btDelPrescription": {
-					"type": "button",
-					"text": "-",
-					"top": 106,
-					"left": 19,
-					"width": 29,
-					"height": 29,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btDelPrescription.4dm"
 				},
 				"btModele": {
 					"type": "button",
 					"text": "modifier modèle ordonnance",
-					"top": 544,
+					"top": 528,
 					"left": 89,
 					"width": 172,
 					"height": 45,
@@ -219,11 +183,35 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/btModele.4dm"
+				},
+				"btPrescription": {
+					"type": "button",
+					"text": "modifier liste prescriptions",
+					"top": 580,
+					"left": 89,
+					"width": 172,
+					"height": 45,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPrescription.4dm"
+				},
+				"btDel": {
+					"type": "button",
+					"text": "-",
+					"top": 263,
+					"left": 13,
+					"width": 29,
+					"height": 29,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDel.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 91,
+	"geometryStamp": 109,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

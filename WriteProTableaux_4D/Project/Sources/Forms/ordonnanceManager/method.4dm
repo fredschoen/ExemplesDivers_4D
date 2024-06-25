@@ -8,7 +8,8 @@ If (Form event code:C388=On Load:K2:1)
 		ASSERT:C1129($save_o.success; "Erreur dans la sauvegarde du paramètre.")
 	End if 
 	
-	Form:C1466.prescriptionDragged:=""
+	Form:C1466.prescription1Dragged_o:=Null:C1517
+	Form:C1466.prescriptionDragged_t:=""
 	Form:C1466.tblPrescription_es:=ds:C1482.tblPrescription.all().orderBy("posPrescription")
 	Form:C1466.tblOrdonnance_e:=ds:C1482.tblOrdonnance.all().first()
 End if 
