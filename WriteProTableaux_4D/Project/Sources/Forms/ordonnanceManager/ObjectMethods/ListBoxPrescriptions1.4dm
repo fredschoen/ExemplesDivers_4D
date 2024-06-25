@@ -1,5 +1,5 @@
 If (Form event code:C388=On Begin Drag Over:K2:44)
-	Form:C1466.prescription1Dragged_o:=Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1[Form:C1466.prescription1PosCurElt-1]
+	Form:C1466.prescription1Dragged_o:=Form:C1466.Ordonnance_e.Ordonnance_o.Prescription1_c[Form:C1466.prescription1PosCurElt-1]
 	
 End if 
 
@@ -9,7 +9,7 @@ If (Form event code:C388=On Drop:K2:12)
 			/////////////////////////////////////////////
 		: (Form:C1466.prescriptionDragged_o#Null:C1517)  //le drag vient de la liste générale
 			
-			Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1.push(Form:C1466.prescriptionDragged_o)
+			Form:C1466.Ordonnance_e.Ordonnance_o.Prescription1_c.push(Form:C1466.prescriptionDragged_o)
 			// redefinir la position de chacun.
 			
 			Form:C1466.prescriptionDragged_o:=Null:C1517
@@ -21,8 +21,8 @@ If (Form event code:C388=On Drop:K2:12)
 			End if 
 			
 			//modifier l'élément du "begin drag"
-			$posDrop:=Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1[FORM Event:C1606.row-1].pos-0.1
-			Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1[Form:C1466.prescription1PosCurElt-1].pos:=$posDrop
+			$posDrop:=Form:C1466.Ordonnance_e.Ordonnance_o.Prescription1_c[FORM Event:C1606.row-1].pos-0.1
+			Form:C1466.Ordonnance_e.Ordonnance_o.Prescription1_c[Form:C1466.prescription1PosCurElt-1].pos:=$posDrop
 			
 			//init le drag
 			Form:C1466.prescription1Dragged_o:=Null:C1517
@@ -30,8 +30,8 @@ If (Form event code:C388=On Drop:K2:12)
 	End case 
 	
 	// tri
-	Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1:=Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1.orderBy("pos")
-	
+	Form:C1466.Ordonnance_e.Ordonnance_o.Prescription1_c:=Form:C1466.Ordonnance_e.Ordonnance_o.Prescription1_c.orderBy("pos")
+	CreerFormPrescription()
 	
 End if 
 

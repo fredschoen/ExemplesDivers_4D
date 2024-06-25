@@ -16,7 +16,7 @@
 	</table>
 	<table name="Ordonnance" uuid="70122218244DE34A81590C8F41BA7CCE" id="2">
 		<field name="ID" uuid="899E0A9771ABA54E8F0A45BA29A10171" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
-		<field name="objOrdonnance" uuid="62F5B6D51220AB48AC1309036BC1A41E" type="21" blob_switch_size="2147483647" id="2"/>
+		<field name="Ordonnance_o" uuid="62F5B6D51220AB48AC1309036BC1A41E" type="21" blob_switch_size="2147483647" id="2"/>
 		<primary_key field_name="ID" field_uuid="899E0A9771ABA54E8F0A45BA29A10171"/>
 		<table_extra>
 			<editor_table_info displayable_fields_count="6">

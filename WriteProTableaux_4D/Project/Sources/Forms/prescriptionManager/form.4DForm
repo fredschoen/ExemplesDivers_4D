@@ -71,12 +71,12 @@
 					"horizontalLineStroke": "transparent",
 					"verticalLineStroke": "transparent",
 					"listboxType": "collection",
-					"dataSource": "Form:C1466.tblPrescription_es",
-					"currentItemSource": "Form:C1466.tblPrescription_e",
+					"dataSource": "Form:C1466.Prescription_es",
+					"currentItemSource": "Form:C1466.Prescription_e",
 					"metaSource": "",
 					"method": "ObjectMethods/ListBoxDocAll.4dm",
 					"dropping": "custom",
-					"selectedItemsSource": "Form:C1466.tblPrescriptionSel_es",
+					"selectedItemsSource": "Form:C1466.PrescriptionSel_es",
 					"dragging": "custom",
 					"columns": [
 						{

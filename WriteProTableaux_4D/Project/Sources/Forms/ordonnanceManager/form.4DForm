@@ -58,7 +58,7 @@
 				"btSave": {
 					"type": "button",
 					"text": "sauver ordonnance",
-					"top": 434,
+					"top": 442,
 					"left": 89,
 					"width": 172,
 					"height": 45,
@@ -83,7 +83,7 @@
 				"ListBoxPrescriptions1": {
 					"type": "listbox",
 					"left": 44,
-					"top": 221,
+					"top": 197,
 					"width": 327,
 					"height": 112,
 					"events": [
@@ -101,7 +101,7 @@
 					"horizontalLineStroke": "transparent",
 					"verticalLineStroke": "transparent",
 					"listboxType": "collection",
-					"dataSource": "Form:C1466.tblOrdonnance_e.objOrdonnance.colPrescription1",
+					"dataSource": "Form:C1466.Ordonnance_e.Ordonnance_o.Prescription1_c",
 					"currentItemSource": "",
 					"metaSource": "",
 					"method": "ObjectMethods/ListBoxPrescriptions1.4dm",
@@ -127,7 +127,7 @@
 						{
 							"header": {
 								"text": "nom1",
-								"name": "Entête4"
+								"name": "enom1"
 							},
 							"name": "nom1",
 							"footer": {
@@ -159,7 +159,7 @@
 					"verticalLineStroke": "transparent",
 					"listboxType": "collection",
 					"dataSource": "Form:C1466.prescription_c",
-					"currentItemSource": "Form:C1466.tblPrescription_e",
+					"currentItemSource": "Form:C1466.Prescription_e",
 					"metaSource": "",
 					"method": "ObjectMethods/ListBoxDocAll.4dm",
 					"dropping": "custom",
@@ -168,8 +168,8 @@
 					"columns": [
 						{
 							"header": {
-								"text": "nom",
-								"name": "enom1"
+								"text": "pos",
+								"name": "epos"
 							},
 							"name": "cpos",
 							"footer": {
@@ -226,22 +226,93 @@
 					],
 					"method": "ObjectMethods/btPrescription.4dm"
 				},
-				"btDel": {
+				"btDel1": {
 					"type": "button",
 					"text": "-",
-					"top": 263,
+					"top": 239,
 					"left": 13,
 					"width": 29,
 					"height": 29,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btDel.4dm"
+					"method": "ObjectMethods/btDel1.4dm"
+				},
+				"ListBoxPrescriptions2": {
+					"type": "listbox",
+					"left": 44,
+					"top": 319,
+					"width": 327,
+					"height": 112,
+					"events": [
+						"onDrop",
+						"onBeforeKeystroke",
+						"onSelectionChange",
+						"onBeginDragOver"
+					],
+					"headerHeight": "24px",
+					"fill": "#F5FBFF",
+					"alternateFill": "#E1F2FC",
+					"hideExtraBlankRows": false,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.Ordonnance_e.Ordonnance_o.Prescription2_c",
+					"currentItemSource": "",
+					"metaSource": "",
+					"method": "ObjectMethods/ListBoxPrescriptions2.4dm",
+					"dropping": "custom",
+					"selectedItemsSource": "",
+					"dragging": "custom",
+					"currentItemPositionSource": "Form:C1466.prescription2PosCurElt",
+					"selectionMode": "single",
+					"columns": [
+						{
+							"header": {
+								"text": "pos2",
+								"name": "cpos2"
+							},
+							"name": "nom3",
+							"footer": {
+								"name": "Pied3"
+							},
+							"width": 50,
+							"dataSource": "This:C1470.pos",
+							"enterable": false
+						},
+						{
+							"header": {
+								"text": "nom2",
+								"name": "enom2"
+							},
+							"name": "nom4",
+							"footer": {
+								"name": "Pied4"
+							},
+							"width": 283,
+							"dataSource": "This:C1470.nom",
+							"enterable": false
+						}
+					]
+				},
+				"btDel2": {
+					"type": "button",
+					"text": "-",
+					"top": 361,
+					"left": 13,
+					"width": 29,
+					"height": 29,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDel2.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 111,
+	"geometryStamp": 126,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
