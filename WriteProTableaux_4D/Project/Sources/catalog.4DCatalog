@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="WriteProTableaux_4D" uuid="9A30F6017D3B40FCA82F3BCF992321F6" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="tblPrescription" uuid="886209EC454E4CBFA5A7A25FB6D1456A" id="1">
+		<field name="ID" uuid="93E4C0DDCE5C4A619EEFFE2D563ABB70" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="nomPrescription" uuid="7729FDBC3FF74A99B1900B6A532CE21E" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="posPrescription" uuid="C3FEB51B865E467F8E1F5F9DCFB6716B" type="5" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="93E4C0DDCE5C4A619EEFFE2D563ABB70"/>
+		<table_extra input_form="frmEnt" output_form="frmSor">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="40" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="tblOrdonnance" uuid="70122218244DE34A81590C8F41BA7CCE" id="2">
+		<field name="ID" uuid="899E0A9771ABA54E8F0A45BA29A10171" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="objOrdonnance" uuid="62F5B6D51220AB48AC1309036BC1A41E" type="21" blob_switch_size="2147483647" id="2"/>
+		<primary_key field_name="ID" field_uuid="899E0A9771ABA54E8F0A45BA29A10171"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="240" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="A7E726CE9286C5439D6B4EE3A999391C" type="7">
+		<field_ref uuid="899E0A9771ABA54E8F0A45BA29A10171" name="ID">
+			<table_ref uuid="70122218244DE34A81590C8F41BA7CCE" name="tblOrdonnance"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="DDD41A564B7B4396ACCBB2349974A53B" type="7">
+		<field_ref uuid="93E4C0DDCE5C4A619EEFFE2D563ABB70" name="ID">
+			<table_ref uuid="886209EC454E4CBFA5A7A25FB6D1456A" name="tblPrescription"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>
