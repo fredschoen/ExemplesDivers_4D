@@ -1,5 +1,4 @@
 If (Form event code:C388=On Load:K2:1)
-	//ds.Ordonnance.all().drop()
 	If (ds:C1482.Ordonnance.all().length=0)
 		var $Prescription_e : cs:C1710.OrdonnanceEntity
 		$Prescription_e:=ds:C1482.Ordonnance.new()

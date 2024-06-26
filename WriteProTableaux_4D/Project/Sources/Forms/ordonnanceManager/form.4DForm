@@ -39,7 +39,7 @@
 				"trace": {
 					"type": "button",
 					"text": "trace",
-					"top": 656,
+					"top": 623,
 					"left": 13,
 					"width": 40,
 					"height": 15,
@@ -58,8 +58,8 @@
 				"btSave": {
 					"type": "button",
 					"text": "sauver ordonnance",
-					"top": 514,
-					"left": 97,
+					"top": 502,
+					"left": 90,
 					"width": 172,
 					"height": 45,
 					"events": [
@@ -100,15 +100,15 @@
 					"columns": [
 						{
 							"header": {
-								"text": "pos",
+								"text": "n°ligne ordo",
 								"name": "cpos1"
 							},
 							"name": "nom2",
 							"footer": {
 								"name": "Pied2"
 							},
-							"width": 50,
-							"dataSource": "This:C1470.pos",
+							"width": 69,
+							"dataSource": "This:C1470.nLigne",
 							"enterable": false
 						},
 						{
@@ -155,7 +155,7 @@
 					"columns": [
 						{
 							"header": {
-								"text": "pos",
+								"text": "n°prescr",
 								"name": "epos"
 							},
 							"name": "cpos",
@@ -192,7 +192,7 @@
 				"btModele": {
 					"type": "button",
 					"text": "modifier modèle ordonnance",
-					"top": 600,
+					"top": 567,
 					"left": 194,
 					"width": 172,
 					"height": 45,
@@ -204,7 +204,7 @@
 				"btPrescription": {
 					"type": "button",
 					"text": "modifier liste prescriptions",
-					"top": 600,
+					"top": 567,
 					"left": 2,
 					"width": 172,
 					"height": 45,
@@ -258,7 +258,7 @@
 					"columns": [
 						{
 							"header": {
-								"text": "pos",
+								"text": "n°ligne ordo",
 								"name": "cpos2"
 							},
 							"name": "nom3",
@@ -266,7 +266,7 @@
 								"name": "Pied3"
 							},
 							"width": 50,
-							"dataSource": "This:C1470.pos",
+							"dataSource": "This:C1470.nLigne",
 							"enterable": false
 						},
 						{
@@ -298,9 +298,9 @@
 				},
 				"WParea": {
 					"type": "write",
-					"top": 125,
-					"left": 396,
-					"width": 880,
+					"top": 28,
+					"left": 391,
+					"width": 822,
 					"height": 590,
 					"sizingX": "grow",
 					"sizingY": "grow",
@@ -356,7 +356,7 @@
 			}
 		}
 	],
-	"geometryStamp": 172,
+	"geometryStamp": 177,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
