@@ -156,11 +156,26 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/bListeChamps.4dm"
+				},
+				"ckCoche": {
+					"type": "checkbox",
+					"text": "coche_b",
+					"top": 181,
+					"left": 179,
+					"width": 163,
+					"height": 28,
+					"events": [
+						"onLoad",
+						"onClick"
+					],
+					"dataSourceTypeHint": "boolean",
+					"method": "ObjectMethods/ckCoche.4dm",
+					"dataSource": "Form:C1466.coche_b"
 				}
 			}
 		}
 	],
-	"geometryStamp": 93,
+	"geometryStamp": 98,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
