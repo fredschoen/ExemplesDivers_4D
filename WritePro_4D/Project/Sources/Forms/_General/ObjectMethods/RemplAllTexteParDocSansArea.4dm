@@ -1,34 +1,30 @@
 //fsch
 
 //charger le "sous-doc" à insérer
-$docWP:=WP New([Table1]Blob4D_b)
+ALL RECORDS([Table1])
+$docPrincipale:=WP New([Table1]Blob4D_a)
 
-//charger le "doc maître
-$docWPa:=WP New([Table1]Blob4D_a)
-
+//chercher
+$txt:="***includ***"
+$txt:=Request("Chaine à remplacer pour l'inclusion"; $txt)
+var $plageCible_c : Collection
 //trouver où insérer le "sous-doc" dans le doc maître
-$objCible2:=WP Find all($docWPa; "***includ***"; wk all insensitive)
-
-
-If ($objCible2=Null)
-	ALERT("// 2. recharger le formulaire (sortir+re-rentrer) ")
-	//return v19r4
-	
-Else 
-	//insérer
-	
-	WP INSERT DOCUMENT($objCible2[0]; $docWP; wk replace)
-	
-	$doc:=Select document(System folder(Documents folder)+"Report.pdf"; "pdf"; "Report name:"; File name entry)
-	If (OK=1)
-		WP EXPORT DOCUMENT($docWPa; document; wk pdf)
-		SHOW ON DISK(System folder(Documents folder); *)
-		
-	End if 
+$plageCible_c:=WP Find all($docPrincipale; $txt; wk all insensitive)
+If ($plageCible_c.length=0)
+	ALERT($txt+" non trouvé")
+	return 
 End if 
 
+//charger le doc secondaire
+$docSecondaire:=WP New([Table1]Blob4D_b)
 
+//insérer doc secondaire dans doc principale
+WP INSERT DOCUMENT($plageCible_c[0]; $docSecondaire; wk replace)
 
-
-//$Txt:=WP Get text(WParea; wk expressions as value)
-//$txt:=WP Get body("WP_Area")
+//écrire doc sur disque
+$doc:=Select document(System folder(Documents folder)+"Report.pdf"; "pdf"; "Report name:"; File name entry)
+If (OK=1)
+	WP EXPORT DOCUMENT($docPrincipale; document; wk pdf)
+	SHOW ON DISK(System folder(Documents folder); *)
+	
+End if 
