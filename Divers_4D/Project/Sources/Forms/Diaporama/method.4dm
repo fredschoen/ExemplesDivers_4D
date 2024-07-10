@@ -8,3 +8,7 @@ If (Form event code:C388=On Load:K2:1)
 End if 
 
 
+If (Form event code:C388=On Timer:K2:25)
+	Form:C1466.compteur+=1
+	Form_AfficherImg()
+End if 

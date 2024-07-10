@@ -13,7 +13,8 @@
 	"bottomMargin": 0,
 	"events": [
 		"onLoad",
-		"onBeforeKeystroke"
+		"onBeforeKeystroke",
+		"onTimer"
 	],
 	"windowTitle": "diapo",
 	"destination": "detailScreen",
@@ -46,7 +47,7 @@
 					"text": "Début",
 					"top": 402,
 					"left": 13,
-					"width": 60,
+					"width": 41,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -59,8 +60,8 @@
 					"type": "button",
 					"text": "+",
 					"top": 402,
-					"left": 74,
-					"width": 32,
+					"left": 155,
+					"width": 20,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -78,8 +79,8 @@
 					"type": "button",
 					"text": "-",
 					"top": 402,
-					"left": 107,
-					"width": 32,
+					"left": 175,
+					"width": 20,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -95,7 +96,7 @@
 				},
 				"zSaisie": {
 					"type": "input",
-					"left": 143,
+					"left": 203,
 					"top": 404,
 					"width": 19,
 					"height": 16,
@@ -108,9 +109,9 @@
 				},
 				"zNom": {
 					"type": "input",
-					"left": 202,
+					"left": 260,
 					"top": 404,
-					"width": 257,
+					"width": 200,
 					"height": 16,
 					"enterable": false,
 					"fill": "transparent",
@@ -123,8 +124,8 @@
 					"type": "button",
 					"text": "->",
 					"top": 402,
-					"left": 170,
-					"width": 32,
+					"left": 230,
+					"width": 25,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -199,6 +200,38 @@
 					"visibility": "visible",
 					"method": "ObjectMethods/btClose.4dm",
 					"style": "custom"
+				},
+				"bAuto": {
+					"type": "button",
+					"text": "(A)uto",
+					"top": 402,
+					"left": 55,
+					"width": 40,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAuto.4dm",
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "a"
+				},
+				"zInfo1": {
+					"type": "input",
+					"dataSource": "Form:C1466.ticksDiapo_i",
+					"top": 403,
+					"left": 97,
+					"width": 50,
+					"height": 20,
+					"events": [
+						"onLoad"
+					],
+					"method": "ObjectMethods/zInfo1.4dm",
+					"sizingY": "move"
 				}
 			},
 			"entryOrder": [
@@ -212,12 +245,14 @@
 				"WebZone",
 				"btWebZone",
 				"btInputZone",
-				"btClose"
+				"btClose",
+				"bAuto",
+				"zInfo1"
 			]
 		}
 	],
 	"method": "method.4dm",
-	"geometryStamp": 295,
+	"geometryStamp": 441,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
