@@ -171,11 +171,23 @@
 					"dataSourceTypeHint": "boolean",
 					"method": "ObjectMethods/ckCoche.4dm",
 					"dataSource": "Form:C1466.coche_b"
+				},
+				"bBreak": {
+					"type": "button",
+					"text": "break",
+					"top": 220,
+					"left": 176,
+					"width": 125,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bBreak.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 98,
+	"geometryStamp": 101,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
