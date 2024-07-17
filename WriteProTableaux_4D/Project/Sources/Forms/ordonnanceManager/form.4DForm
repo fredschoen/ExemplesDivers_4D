@@ -9,8 +9,8 @@
 	"windowMinHeight": 0,
 	"windowMaxWidth": 32767,
 	"windowMaxHeight": 32767,
-	"rightMargin": 20,
-	"bottomMargin": 20,
+	"rightMargin": 5,
+	"bottomMargin": 5,
 	"events": [
 		"onLoad",
 		"onPageChange",
@@ -39,7 +39,7 @@
 				"trace": {
 					"type": "button",
 					"text": "trace",
-					"top": 623,
+					"top": 603,
 					"left": 13,
 					"width": 40,
 					"height": 15,
@@ -192,7 +192,7 @@
 				"btModele": {
 					"type": "button",
 					"text": "modifier modèle ordonnance",
-					"top": 567,
+					"top": 548,
 					"left": 194,
 					"width": 172,
 					"height": 45,
@@ -204,7 +204,7 @@
 				"btPrescription": {
 					"type": "button",
 					"text": "modifier liste prescriptions",
-					"top": 567,
+					"top": 548,
 					"left": 2,
 					"width": 172,
 					"height": 45,
@@ -300,7 +300,7 @@
 					"type": "write",
 					"top": 28,
 					"left": 391,
-					"width": 822,
+					"width": 494,
 					"height": 590,
 					"sizingX": "grow",
 					"sizingY": "grow",
@@ -310,7 +310,6 @@
 					"scrollbarHorizontal": "automatic",
 					"dpi": 0,
 					"borderStyle": "none",
-					"method": "ObjectMethods/WParea.4dm",
 					"events": [
 						"onLoad",
 						"onLosingFocus",
@@ -352,11 +351,24 @@
 					"left": 49,
 					"width": 230,
 					"height": 15
+				},
+				"WebArea": {
+					"type": "webArea",
+					"left": 896,
+					"top": 28,
+					"width": 413,
+					"height": 590,
+					"dataSource": "",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"borderStyle": "system",
+					"bottom": 618,
+					"webEngine": "system"
 				}
 			}
 		}
 	],
-	"geometryStamp": 177,
+	"geometryStamp": 191,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

@@ -183,11 +183,51 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/bBreak.4dm"
+				},
+				"z1": {
+					"type": "input",
+					"left": 179,
+					"top": 263,
+					"width": 137,
+					"height": 16,
+					"method": "ObjectMethods/z1.4dm",
+					"dataSource": "Form:C1466.z1",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"text": "non modifiable",
+					"top": 261,
+					"left": 28,
+					"width": 107,
+					"height": 15
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "non modifiable",
+					"top": 286,
+					"left": 28,
+					"width": 107,
+					"height": 15
+				},
+				"Zone de saisie1": {
+					"type": "input",
+					"left": 178,
+					"top": 290,
+					"width": 128,
+					"height": 16,
+					"dataSourceTypeHint": "number",
+					"numberFormat": "###,##0.00",
+					"method": "ObjectMethods/Zone de saisie1.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 101,
+	"geometryStamp": 158,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
