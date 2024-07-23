@@ -39,7 +39,7 @@
 				"trace": {
 					"type": "button",
 					"text": "trace",
-					"top": 603,
+					"top": 616,
 					"left": 13,
 					"width": 40,
 					"height": 15,
@@ -58,10 +58,10 @@
 				"btSave": {
 					"type": "button",
 					"text": "sauver ordonnance",
-					"top": 502,
-					"left": 90,
+					"top": 611,
+					"left": 111,
 					"width": 172,
-					"height": 45,
+					"height": 25,
 					"events": [
 						"onClick"
 					],
@@ -69,10 +69,10 @@
 				},
 				"ListBoxPrescriptions1": {
 					"type": "listbox",
-					"left": 44,
-					"top": 237,
+					"left": 49,
+					"top": 246,
 					"width": 327,
-					"height": 112,
+					"height": 150,
 					"events": [
 						"onDrop",
 						"onBeforeKeystroke",
@@ -128,10 +128,10 @@
 				},
 				"ListBoxDocAll": {
 					"type": "listbox",
-					"left": 39,
+					"left": 48,
 					"top": 69,
 					"width": 327,
-					"height": 142,
+					"height": 150,
 					"events": [
 						"onLoad",
 						"onBeginDragOver"
@@ -168,7 +168,9 @@
 							"events": [
 								"onDataChange"
 							],
-							"method": "ObjectMethods/cpos.4dm"
+							"method": "ObjectMethods/cpos.4dm",
+							"minWidth": 50,
+							"maxWidth": 100
 						},
 						{
 							"header": {
@@ -185,17 +187,19 @@
 							"events": [
 								"onDataChange"
 							],
-							"method": "ObjectMethods/cnom.4dm"
+							"method": "ObjectMethods/cnom.4dm",
+							"minWidth": 200,
+							"maxWidth": 3000
 						}
 					]
 				},
 				"btModele": {
 					"type": "button",
 					"text": "modifier modèle ordonnance",
-					"top": 548,
-					"left": 194,
+					"top": 639,
+					"left": 208,
 					"width": 172,
-					"height": 45,
+					"height": 25,
 					"events": [
 						"onClick"
 					],
@@ -204,10 +208,10 @@
 				"btPrescription": {
 					"type": "button",
 					"text": "modifier liste prescriptions",
-					"top": 548,
-					"left": 2,
+					"top": 639,
+					"left": 16,
 					"width": 172,
-					"height": 45,
+					"height": 25,
 					"events": [
 						"onClick"
 					],
@@ -216,7 +220,7 @@
 				"btDel1": {
 					"type": "button",
 					"text": "-",
-					"top": 279,
+					"top": 268,
 					"left": 13,
 					"width": 29,
 					"height": 29,
@@ -228,9 +232,9 @@
 				"ListBoxPrescriptions2": {
 					"type": "listbox",
 					"left": 49,
-					"top": 377,
+					"top": 436,
 					"width": 327,
-					"height": 112,
+					"height": 150,
 					"events": [
 						"onDrop",
 						"onBeforeKeystroke",
@@ -267,7 +271,9 @@
 							},
 							"width": 50,
 							"dataSource": "This:C1470.nLigne",
-							"enterable": false
+							"enterable": false,
+							"minWidth": 50,
+							"maxWidth": 100
 						},
 						{
 							"header": {
@@ -280,14 +286,16 @@
 							},
 							"width": 283,
 							"dataSource": "This:C1470.nom",
-							"enterable": false
+							"enterable": false,
+							"minWidth": 200,
+							"maxWidth": 500
 						}
 					]
 				},
 				"btDel2": {
 					"type": "button",
 					"text": "-",
-					"top": 401,
+					"top": 437,
 					"left": 13,
 					"width": 29,
 					"height": 29,
@@ -295,38 +303,6 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/btDel2.4dm"
-				},
-				"WParea": {
-					"type": "write",
-					"top": 28,
-					"left": 391,
-					"width": 494,
-					"height": 590,
-					"sizingX": "grow",
-					"sizingY": "grow",
-					"dataSource": "WParea",
-					"hideFocusRing": true,
-					"scrollbarVertical": "automatic",
-					"scrollbarHorizontal": "automatic",
-					"dpi": 0,
-					"borderStyle": "none",
-					"events": [
-						"onLoad",
-						"onLosingFocus",
-						"onGettingFocus",
-						"onSelectionChange",
-						"onAfterEdit"
-					],
-					"focusable": false,
-					"enterable": false,
-					"showHeaders": true,
-					"showFooters": true,
-					"showBackground": true,
-					"showHorizontalRuler": false,
-					"showVerticalRuler": false,
-					"showHTMLWysiwyg": false,
-					"showPageFrames": false,
-					"showReferences": false
 				},
 				"Texte": {
 					"type": "text",
@@ -339,36 +315,48 @@
 				"Texte1": {
 					"type": "text",
 					"text": "zones 1",
-					"top": 221,
-					"left": 44,
+					"top": 227,
+					"left": 47,
 					"width": 230,
 					"height": 15
 				},
 				"Texte2": {
 					"type": "text",
-					"text": "zones 1",
-					"top": 359,
-					"left": 49,
+					"text": "zones 2",
+					"top": 418,
+					"left": 53,
 					"width": 230,
 					"height": 15
 				},
 				"WebArea": {
 					"type": "webArea",
-					"left": 896,
-					"top": 28,
-					"width": 413,
-					"height": 590,
+					"left": 400,
+					"top": 8,
+					"width": 502,
+					"height": 656,
 					"dataSource": "",
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"borderStyle": "system",
-					"bottom": 618,
+					"bottom": 664,
 					"webEngine": "system"
+				},
+				"btRaffraichir": {
+					"type": "button",
+					"text": "raffraichir",
+					"top": 42,
+					"left": 266,
+					"width": 69,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btRaffraichir.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 191,
+	"geometryStamp": 347,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
