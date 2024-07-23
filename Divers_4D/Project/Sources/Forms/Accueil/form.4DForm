@@ -18,7 +18,15 @@
 	"destination": "detailScreen",
 	"pages": [
 		{
-			"objects": {}
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 63,
+					"left": 17,
+					"width": 498,
+					"height": 384
+				}
+			}
 		},
 		{
 			"objects": {
@@ -62,8 +70,8 @@
 					"type": "listbox",
 					"left": 170,
 					"top": 116,
-					"width": 200,
-					"height": 49,
+					"width": 217,
+					"height": 116,
 					"events": [
 						"onClick",
 						"onHeaderClick",
@@ -72,6 +80,9 @@
 					],
 					"sizingY": "fixed",
 					"sizingX": "grow",
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.collection_c",
+					"metaSource": "listMetaInfo(This:C1470.etat)",
 					"columns": [
 						{
 							"header": {
@@ -82,8 +93,10 @@
 							"footer": {
 								"name": "Pied1"
 							},
-							"width": 72,
-							"maxWidth": 200
+							"width": 200,
+							"maxWidth": 200,
+							"dataSource": "This:C1470.etat",
+							"minWidth": 200
 						}
 					]
 				},
@@ -102,8 +115,8 @@
 				"bAffListeHierarchique": {
 					"type": "button",
 					"text": "aff ListeHierarchique",
-					"top": 15,
-					"left": 148,
+					"top": 14,
+					"left": 210,
 					"width": 153,
 					"height": 33,
 					"events": [
@@ -128,8 +141,8 @@
 				"bTrace": {
 					"type": "button",
 					"text": "Trace",
-					"top": 153,
-					"left": 16,
+					"top": 15,
+					"left": 459,
 					"width": 40,
 					"height": 16,
 					"events": [
@@ -148,8 +161,8 @@
 				"bListeChamps": {
 					"type": "button",
 					"text": "liste champs",
-					"top": 194,
-					"left": 50,
+					"top": 301,
+					"left": 49,
 					"width": 100,
 					"height": 20,
 					"events": [
@@ -160,8 +173,8 @@
 				"ckCoche": {
 					"type": "checkbox",
 					"text": "coche_b",
-					"top": 181,
-					"left": 179,
+					"top": 261,
+					"left": 50,
 					"width": 163,
 					"height": 28,
 					"events": [
@@ -175,10 +188,10 @@
 				"bBreak": {
 					"type": "button",
 					"text": "break",
-					"top": 220,
-					"left": 176,
-					"width": 125,
-					"height": 30,
+					"top": 331,
+					"left": 52,
+					"width": 98,
+					"height": 24,
 					"events": [
 						"onClick"
 					],
@@ -186,8 +199,8 @@
 				},
 				"z1": {
 					"type": "input",
-					"left": 179,
-					"top": 263,
+					"left": 178,
+					"top": 370,
 					"width": 137,
 					"height": 16,
 					"method": "ObjectMethods/z1.4dm",
@@ -201,23 +214,23 @@
 				"Texte": {
 					"type": "text",
 					"text": "non modifiable",
-					"top": 261,
-					"left": 28,
+					"top": 368,
+					"left": 51,
 					"width": 107,
 					"height": 15
 				},
 				"Texte1": {
 					"type": "text",
 					"text": "non modifiable",
-					"top": 286,
-					"left": 28,
+					"top": 393,
+					"left": 51,
 					"width": 107,
 					"height": 15
 				},
 				"Zone de saisie1": {
 					"type": "input",
-					"left": 178,
-					"top": 290,
+					"left": 177,
+					"top": 397,
 					"width": 128,
 					"height": 16,
 					"dataSourceTypeHint": "number",
@@ -227,7 +240,7 @@
 			}
 		}
 	],
-	"geometryStamp": 158,
+	"geometryStamp": 202,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
