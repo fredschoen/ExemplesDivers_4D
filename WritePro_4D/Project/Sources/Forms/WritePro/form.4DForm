@@ -26,8 +26,8 @@
 					"type": "button",
 					"text": "Générer PDF",
 					"top": 279,
-					"left": 820,
-					"width": 187,
+					"left": 800,
+					"width": 150,
 					"height": 22,
 					"events": [
 						"onClick"
@@ -38,8 +38,8 @@
 					"type": "button",
 					"text": "Presse papier",
 					"top": 313,
-					"left": 820,
-					"width": 187,
+					"left": 800,
+					"width": 150,
 					"height": 22,
 					"events": [
 						"onClick"
@@ -89,8 +89,8 @@
 					"type": "button",
 					"text": "imprimer_objet",
 					"top": 388,
-					"left": 820,
-					"width": 187,
+					"left": 800,
+					"width": 150,
 					"height": 22,
 					"events": [
 						"onClick"
@@ -99,9 +99,9 @@
 				},
 				"zTexte": {
 					"type": "input",
-					"left": 852,
+					"left": 830,
 					"top": 346,
-					"width": 159,
+					"width": 120,
 					"height": 17,
 					"dataSource": "Form:C1466.vTexte",
 					"styledText": true
@@ -110,8 +110,8 @@
 					"type": "button",
 					"text": "Insert_Picture",
 					"top": 440,
-					"left": 820,
-					"width": 187,
+					"left": 800,
+					"width": 150,
 					"height": 22,
 					"events": [
 						"onClick"
@@ -122,8 +122,8 @@
 					"type": "button",
 					"text": "sauver_Blob4D_a",
 					"top": 183,
-					"left": 820,
-					"width": 187,
+					"left": 800,
+					"width": 120,
 					"height": 22,
 					"events": [
 						"onClick"
@@ -134,8 +134,8 @@
 					"type": "button",
 					"text": "sauver_Blob4D_b",
 					"top": 210,
-					"left": 820,
-					"width": 187,
+					"left": 800,
+					"width": 120,
 					"height": 22,
 					"events": [
 						"onClick"
@@ -146,8 +146,8 @@
 					"type": "button",
 					"text": "charger_Blob4D_a",
 					"top": 103,
-					"left": 820,
-					"width": 187,
+					"left": 800,
+					"width": 120,
 					"height": 22,
 					"events": [
 						"onClick"
@@ -158,8 +158,8 @@
 					"type": "button",
 					"text": "charger_Blob4D_b",
 					"top": 131,
-					"left": 820,
-					"width": 187,
+					"left": 800,
+					"width": 120,
 					"height": 17,
 					"events": [
 						"onClick"
@@ -170,8 +170,8 @@
 					"type": "button",
 					"text": "RemplacerTexteParDoc",
 					"top": 465,
-					"left": 820,
-					"width": 187,
+					"left": 800,
+					"width": 150,
 					"height": 22,
 					"events": [
 						"onClick"
@@ -182,8 +182,8 @@
 					"type": "button",
 					"text": "remplacerChaine",
 					"top": 524,
-					"left": 820,
-					"width": 187,
+					"left": 800,
+					"width": 150,
 					"height": 22,
 					"events": [
 						"onClick"
@@ -194,8 +194,8 @@
 					"type": "button",
 					"text": "Imprimer",
 					"top": 410,
-					"left": 820,
-					"width": 187,
+					"left": 800,
+					"width": 150,
 					"height": 22,
 					"events": [
 						"onClick"
@@ -206,8 +206,8 @@
 					"type": "button",
 					"text": "RemplacerTexteParGetText",
 					"top": 493,
-					"left": 820,
-					"width": 187,
+					"left": 800,
+					"width": 150,
 					"height": 22,
 					"events": [
 						"onClick"
@@ -218,8 +218,8 @@
 					"type": "button",
 					"text": "RemplAllTexteParDoc",
 					"top": 551,
-					"left": 820,
-					"width": 187,
+					"left": 800,
+					"width": 150,
 					"height": 22,
 					"events": [
 						"onClick"
@@ -228,22 +228,30 @@
 				},
 				"btrace": {
 					"type": "button",
-					"text": "trace",
-					"top": 29,
-					"left": 836,
-					"width": 87,
-					"height": 24,
+					"text": "(t)race",
+					"top": 15,
+					"left": 977,
+					"width": 31,
+					"height": 19,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btrace.4dm"
+					"method": "ObjectMethods/btrace.4dm",
+					"style": "custom",
+					"borderStyle": "solid",
+					"fontSize": 9,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t"
 				},
 				"Bouton": {
 					"type": "button",
 					"text": "Police \"Arial\"",
 					"top": 249,
-					"left": 835,
-					"width": 167,
+					"left": 800,
+					"width": 150,
 					"height": 10,
 					"events": [
 						"onClick"
@@ -254,8 +262,8 @@
 					"type": "button",
 					"text": "Creer Entete",
 					"top": 578,
-					"left": 826,
-					"width": 176,
+					"left": 800,
+					"width": 150,
 					"height": 22,
 					"events": [
 						"onClick"
@@ -266,8 +274,8 @@
 					"type": "button",
 					"text": "supprimer entete",
 					"top": 609,
-					"left": 832,
-					"width": 179,
+					"left": 800,
+					"width": 150,
 					"height": 22,
 					"events": [
 						"onClick"
@@ -278,8 +286,8 @@
 					"type": "button",
 					"text": "supprimer entete D",
 					"top": 635,
-					"left": 834,
-					"width": 168,
+					"left": 800,
+					"width": 150,
 					"height": 23,
 					"events": [
 						"onClick"
@@ -311,6 +319,18 @@
 					],
 					"method": "ObjectMethods/Bouton5.4dm",
 					"sizingY": "move"
+				},
+				"charger_wp1": {
+					"type": "button",
+					"text": "charger_wp1",
+					"top": 103,
+					"left": 926,
+					"width": 120,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/charger_wp1.4dm"
 				}
 			},
 			"entryOrder": [
@@ -336,11 +356,12 @@
 				"Bouton2",
 				"Bouton3",
 				"Bouton4",
-				"Bouton5"
+				"Bouton5",
+				"charger_wp1"
 			]
 		}
 	],
-	"geometryStamp": 241,
+	"geometryStamp": 364,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

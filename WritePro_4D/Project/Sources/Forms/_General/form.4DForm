@@ -60,11 +60,43 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/RemplAllTexteParDocSansArea.4dm"
+				},
+				" btModele1": {
+					"type": "button",
+					"text": "Modele1",
+					"top": 246,
+					"left": 135,
+					"width": 60,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/ btModele1.4dm"
+				},
+				"btrace": {
+					"type": "button",
+					"text": "(t)race",
+					"top": 8,
+					"left": 4,
+					"width": 31,
+					"height": 19,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btrace.4dm",
+					"style": "custom",
+					"borderStyle": "solid",
+					"fontSize": 9,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t"
 				}
 			}
 		}
 	],
-	"geometryStamp": 13,
+	"geometryStamp": 18,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

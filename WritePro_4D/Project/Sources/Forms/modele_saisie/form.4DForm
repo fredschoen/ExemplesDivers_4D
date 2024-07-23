@@ -1,0 +1,159 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "Modification d'un modèle",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"WParea": {
+					"type": "write",
+					"top": 172,
+					"left": 14,
+					"width": 880,
+					"height": 590,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "WParea",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"borderStyle": "none",
+					"method": "ObjectMethods/WParea.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onSelectionChange",
+						"onAfterEdit"
+					]
+				},
+				"WPtoolbar": {
+					"type": "subform",
+					"top": 82,
+					"left": 14,
+					"width": 880,
+					"height": 90,
+					"sizingX": "grow",
+					"detailForm": "WP_Toolbar",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"btSave": {
+					"type": "button",
+					"text": "sauver le modèle",
+					"top": 31,
+					"left": 343,
+					"width": 277,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btSave.4dm",
+					"sizingY": "fixed",
+					"sizingX": "grow",
+					"stroke": "#ff0000",
+					"fontWeight": "bold",
+					"fontSize": 14
+				},
+				"Zone de saisie": {
+					"type": "input",
+					"left": 14,
+					"top": 7,
+					"width": 880,
+					"height": 20,
+					"enterable": false,
+					"dataSource": "Form:C1466.path_t",
+					"fontSize": 14,
+					"borderStyle": "none",
+					"fontWeight": "normal",
+					"textAlign": "center",
+					"sizingX": "grow"
+				},
+				"Zone de saisie1": {
+					"type": "input",
+					"left": 635,
+					"top": 39,
+					"width": 259,
+					"height": 32,
+					"borderStyle": "none",
+					"dataSource": "Form:C1466.message_t",
+					"fill": "transparent",
+					"sizingY": "fixed",
+					"sizingX": "move"
+				},
+				"btTrace": {
+					"type": "button",
+					"text": "Trace",
+					"top": 24,
+					"left": 33,
+					"width": 35,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btTrace.4dm",
+					"style": "custom",
+					"borderStyle": "solid",
+					"fontSize": 8
+				},
+				"btPdf": {
+					"type": "button",
+					"text": "Pdf",
+					"top": 39,
+					"left": 221,
+					"width": 42,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPdf.4dm"
+				}
+			}
+		}
+	],
+	"geometryStamp": 82,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}
