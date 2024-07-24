@@ -1,7 +1,7 @@
 //fsch
 
 
-//WP PRINT(WP_Area)
+//WP PRINT(WParea)
 
 var $o : Object
 $o:=WP New([Table1]Blob4D_a)

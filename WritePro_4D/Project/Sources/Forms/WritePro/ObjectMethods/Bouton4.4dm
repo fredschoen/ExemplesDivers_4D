@@ -9,5 +9,5 @@ If ($subsection#Null)
 	$header:=WP New header($subsection)
 End if 
 
-$headerTarget:=WP Get header(WP_Area; 1; wk first page)  //get the first page header of section 1
+$headerTarget:=WP Get header(WParea; 1; wk first page)  //get the first page header of section 1
 $rangeTarget:=WP Text range($headerTarget; wk start text; wk end text)

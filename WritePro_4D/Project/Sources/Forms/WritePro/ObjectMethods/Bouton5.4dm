@@ -1,7 +1,7 @@
 
 
 //$viewFile_t:=Select document(""; ".4wp"; "Sélection du document 4D View"; Use sheet window)
-//WP_Area:=WP Import document("C:\\documents\\4DWriteDocs\\Letter.4w7")
+//WParea:=WP Import document("C:\\documents\\4DWriteDocs\\Letter.4w7")
 
 
 var $b : Blob
@@ -18,6 +18,6 @@ If (OK=1)  // If a document has been chosen
 	If (OK=0)
 		// Handle error
 	Else 
-		WP_Area:=WP New($b)
+		WParea:=WP New($b)
 	End if 
 End if 

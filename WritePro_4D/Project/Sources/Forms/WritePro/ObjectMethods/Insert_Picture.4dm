@@ -1,16 +1,16 @@
 //C_OBJECT($wpRange)
 //$wpRange:=WP Get selection([EXAMPLES]wpDoc)
 
-WP_Area:=WP New()
+WParea:=WP New()
 
 C_BOOLEAN($fail)
 $fail:=False
 $path_t:=Folder(fk resources folder).file("img1.png").platformPath
 
 
-WP SET ATTRIBUTES(WP_Area; wk layout unit; wk unit px)
-WP SET ATTRIBUTES(WP_Area; wk page margin; "50")
-$rgPicture:=WP Add picture(WP_Area; $path_t)
+WP SET ATTRIBUTES(WParea; wk layout unit; wk unit px)
+WP SET ATTRIBUTES(WParea; wk page margin; "50")
+$rgPicture:=WP Add picture(WParea; $path_t)
 WP SET ATTRIBUTES($rgPicture; wk anchor horizontal align; wk center)  //centrer
 WP SET ATTRIBUTES($rgPicture; wk anchor vertical align; wk center)  // centrer
 
@@ -26,11 +26,11 @@ If (False)
 	
 	
 	If (True)
-		$wpRange:=WP Text range(WP_Area; wk start text; wk end text)
+		$wpRange:=WP Text range(WParea; wk start text; wk end text)
 		WP INSERT PICTURE($wpRange; $p; wk replace)
 	End if 
 	
-	$oPicts:=WP Picture range(WP Text range(WP_Area; wk start text; wk end text))
+	$oPicts:=WP Picture range(WP Text range(WParea; wk start text; wk end text))
 	
 	PICTURE PROPERTIES($p; $width; $height)
 	If (($width/$height)>(210/296))  //plus large que haute
@@ -57,7 +57,7 @@ If (False)
 		If (Is picture file(document))
 			// insert picture selected by user
 			//WP INSERT PICTURE($wpRange; document; wk replace) //erreur "manque un objet"
-			//WP INSERT PICTURE(WP_Area; document; wk append)  //erreur "manque un objet"
+			//WP INSERT PICTURE(WParea; document; wk append)  //erreur "manque un objet"
 		Else 
 			$fail:=True
 		End if 

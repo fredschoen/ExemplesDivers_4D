@@ -3,7 +3,7 @@ var $file_t : Text
 
 $file_t:=Get 4D folder(Database folder)+"document.4WP"
 
-WP EXPORT DOCUMENT(WP_Area; $file_t; wk 4wp)
+WP EXPORT DOCUMENT(WParea; $file_t; wk 4wp)
 
 If (Test path name($file_t)=Is a document)  // Ouvrir le document
 	DOCUMENT TO BLOB($file_t; [Table1]Blob4D_b)

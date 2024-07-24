@@ -46,7 +46,7 @@
 					],
 					"method": "ObjectMethods/Générer PDF1.4dm"
 				},
-				"WP_Area": {
+				"WParea": {
 					"type": "write",
 					"top": 91,
 					"left": 1,
@@ -54,13 +54,13 @@
 					"height": 540,
 					"sizingX": "fixed",
 					"sizingY": "grow",
-					"dataSource": "WP_Area",
+					"dataSource": "WParea",
 					"hideFocusRing": true,
 					"scrollbarVertical": "automatic",
 					"scrollbarHorizontal": "automatic",
 					"dpi": 0,
 					"borderStyle": "none",
-					"method": "ObjectMethods/WP_Area.4dm",
+					"method": "ObjectMethods/WParea.4dm",
 					"events": [
 						"onLosingFocus",
 						"onGettingFocus",
@@ -181,8 +181,8 @@
 				"remplacerChaine": {
 					"type": "button",
 					"text": "remplacerChaine",
-					"top": 524,
-					"left": 800,
+					"top": 529,
+					"left": 801,
 					"width": 150,
 					"height": 22,
 					"events": [
@@ -205,7 +205,7 @@
 				"RemplacerTexteParGetText": {
 					"type": "button",
 					"text": "RemplacerTexteParGetText",
-					"top": 493,
+					"top": 486,
 					"left": 800,
 					"width": 150,
 					"height": 22,
@@ -331,6 +331,30 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/charger_wp1.4dm"
+				},
+				"RemplacerTexteParSaut": {
+					"type": "button",
+					"text": "RemplacerTexteParSaut",
+					"top": 507,
+					"left": 800,
+					"width": 150,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/RemplacerTexteParSaut.4dm"
+				},
+				"sauver_wp1": {
+					"type": "button",
+					"text": "sauver_wp1",
+					"top": 131,
+					"left": 926,
+					"width": 120,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/sauver_wp1.4dm"
 				}
 			},
 			"entryOrder": [
@@ -343,7 +367,7 @@
 				"imprimer_objet",
 				"Insert_Picture",
 				"zTexte",
-				"WP_Area",
+				"WParea",
 				"WPtoolbar",
 				"RemplacerTexteParInsertDoc",
 				"remplacerChaine",
@@ -357,11 +381,13 @@
 				"Bouton3",
 				"Bouton4",
 				"Bouton5",
-				"charger_wp1"
+				"charger_wp1",
+				"RemplacerTexteParSaut",
+				"sauver_wp1"
 			]
 		}
 	],
-	"geometryStamp": 364,
+	"geometryStamp": 414,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

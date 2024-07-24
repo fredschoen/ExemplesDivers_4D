@@ -1,2 +1,2 @@
 WP UpdateWidget("WPtoolbar"; "WParea")
-Form:C1466.message_t:=""
+Form.message_t:=""

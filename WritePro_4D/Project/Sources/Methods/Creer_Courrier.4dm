@@ -9,9 +9,9 @@ C_OBJECT($section; $header)
 
 // à la création courrier, accepter un blob à 0 octets
 If (BLOB size($xxx_Texte_)=0)  //fsch_blob0
-	WPArea:=WP New()  //fsch_blob0
+	WParea:=WP New()  //fsch_blob0
 Else   //fsch_blob0
-	WPArea:=WP New($xxx_Texte_)  //fsch
+	WParea:=WP New($xxx_Texte_)  //fsch
 End if   //fsch_blob0
 
 WP EXPORT VARIABLE(WParea; $fff_Facturation_Texte_; wk 4wp)  //fsch
@@ -62,6 +62,6 @@ WP INSERT DOCUMENT($footer; $xx; wk replace)
 
 WParea:=WP Import document($ccc_Chemin_Accès)  //fsch
 
-WPArea:=WP New($xxx_Texte_)  //fsch
+WParea:=WP New($xxx_Texte_)  //fsch
 
 OBJECT SET ENABLED(WParea; False)  //fsch

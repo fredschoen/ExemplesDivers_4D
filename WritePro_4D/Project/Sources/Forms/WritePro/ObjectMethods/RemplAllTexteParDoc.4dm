@@ -4,7 +4,7 @@
 $docWP:=WP New([Table1]Blob4D_b)
 
 //trouver où insérer le "sous-doc" dans le doc maître
-$objCible2:=WP Find all(WP_Area; "***includ***"; wk all insensitive)
+$objCible2:=WP Find all(WParea; "***includ***"; wk all insensitive)
 
 
 If ($objCible2=Null)
@@ -14,7 +14,7 @@ If ($objCible2=Null)
 	// 1. charger
 	// 2. recharger le formulaire (sortir+re-rentrer) 
 	// 3. faire "importerDoc"
-	// je supose que: WP_Area n'est mis à jour que quand on re-rentre dans le formulaire, non ????
+	// je supose que: WParea n'est mis à jour que quand on re-rentre dans le formulaire, non ????
 	//bizarre>>>>>
 	
 Else 
@@ -32,4 +32,4 @@ End if
 
 
 //$Txt:=WP Get text(WParea; wk expressions as value)
-//$txt:=WP Get body("WP_Area")
+//$txt:=WP Get body("WParea")
