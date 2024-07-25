@@ -44,7 +44,7 @@
 				},
 				"bDebut": {
 					"type": "button",
-					"text": "Début",
+					"text": "(D)ébut",
 					"top": 402,
 					"left": 13,
 					"width": 41,
@@ -54,13 +54,18 @@
 					],
 					"method": "ObjectMethods/bDebut.4dm",
 					"sizingX": "fixed",
-					"sizingY": "move"
+					"sizingY": "move",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "d"
 				},
 				"bPlus": {
 					"type": "button",
 					"text": "+",
 					"top": 402,
-					"left": 155,
+					"left": 165,
 					"width": 20,
 					"height": 20,
 					"events": [
@@ -79,7 +84,7 @@
 					"type": "button",
 					"text": "-",
 					"top": 402,
-					"left": 175,
+					"left": 185,
 					"width": 20,
 					"height": 20,
 					"events": [
@@ -96,7 +101,7 @@
 				},
 				"zSaisie": {
 					"type": "input",
-					"left": 203,
+					"left": 209,
 					"top": 404,
 					"width": 19,
 					"height": 16,
@@ -203,7 +208,7 @@
 				},
 				"bAuto": {
 					"type": "button",
-					"text": "(A)uto",
+					"text": "A(u)to",
 					"top": 402,
 					"left": 55,
 					"width": 40,
@@ -218,20 +223,39 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "a"
+					"shortcutKey": "u"
 				},
 				"zInfo1": {
 					"type": "input",
 					"dataSource": "Form:C1466.ticksDiapo_i",
 					"top": 403,
 					"left": 97,
-					"width": 50,
+					"width": 40,
 					"height": 20,
 					"events": [
 						"onLoad"
 					],
 					"method": "ObjectMethods/zInfo1.4dm",
 					"sizingY": "move"
+				},
+				"bPage2": {
+					"type": "button",
+					"text": "2",
+					"top": 402,
+					"left": 145,
+					"width": 20,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bPage2.4dm",
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "2"
 				}
 			},
 			"entryOrder": [
@@ -247,12 +271,105 @@
 				"btInputZone",
 				"btClose",
 				"bAuto",
-				"zInfo1"
+				"zInfo1",
+				"bPage2"
 			]
+		},
+		{
+			"objects": {
+				"InputZone1": {
+					"type": "input",
+					"left": 0,
+					"top": 0,
+					"width": 543,
+					"height": 432,
+					"dataSourceTypeHint": "picture",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"enterable": false,
+					"pictureFormat": "proportionalCenter",
+					"dataSource": "Form:C1466.img",
+					"events": [
+						"onClick",
+						"onBeforeKeystroke"
+					],
+					"method": "ObjectMethods/InputZone1.4dm",
+					"fill": "#000000"
+				},
+				"bPlus1": {
+					"type": "button",
+					"text": "+",
+					"top": 0,
+					"left": 41,
+					"width": 20,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bPlus1.4dm",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"shortcutAccel": false,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "[right arrow]",
+					"visibility": "visible",
+					"focusable": false,
+					"style": "flat",
+					"fontSize": 8
+				},
+				"bMoins1": {
+					"type": "button",
+					"text": "-",
+					"top": 0,
+					"left": 61,
+					"width": 20,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bMoins1.4dm",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"shortcutAccel": false,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "[left arrow]",
+					"visibility": "visible",
+					"focusable": false,
+					"style": "flat",
+					"fontSize": 8
+				},
+				"bAuto1": {
+					"type": "button",
+					"text": "A(u)to",
+					"top": 0,
+					"left": 0,
+					"width": 40,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAuto1.4dm",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "u",
+					"visibility": "visible",
+					"focusable": false,
+					"style": "flat",
+					"fontSize": 8
+				}
+			}
 		}
 	],
 	"method": "method.4dm",
-	"geometryStamp": 441,
+	"geometryStamp": 523,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
