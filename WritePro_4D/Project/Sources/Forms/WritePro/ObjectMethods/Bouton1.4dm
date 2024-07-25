@@ -1,18 +1,18 @@
 var $headerTarget : Object
 
-$headerTarget:=WP Get header(WP_Area; 1)  //get the first page header of section 1
+$headerTarget:=WP Get header(WParea; 1)  //get the first page header of section 1
 
 If ($headerTarget=Null)
 	C_OBJECT($section; $subsection; $header)
 	//Retrieve the first section
-	$section:=WP Get section(WP_Area; 1)
+	$section:=WP Get section(WParea; 1)
 	$header:=WP New header($section)
 End if 
 
 
 
-//$headerTarget:=WP Get header(WP_Area; 1; wk first page)  //get the first page header of section 1
-$headerTarget:=WP Get header(WP_Area; 1)  //all pages of section 1
+//$headerTarget:=WP Get header(WParea; 1; wk first page)  //get the first page header of section 1
+$headerTarget:=WP Get header(WParea; 1)  //all pages of section 1
 $rangeTarget:=WP Text range($headerTarget; wk start text; wk end text)
 
 

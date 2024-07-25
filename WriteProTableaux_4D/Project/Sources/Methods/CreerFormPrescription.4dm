@@ -25,6 +25,7 @@ For each ($elt; Form:C1466.Ordonnance_e.Ordonnance_o.Prescription1_c)
 	$elt.nLigne:=$nLigne
 End for each 
 
+$nLigne:=0
 For each ($elt; Form:C1466.Ordonnance_e.Ordonnance_o.Prescription2_c)
 	$nLigne+=1
 	$elt.nLigne:=$nLigne

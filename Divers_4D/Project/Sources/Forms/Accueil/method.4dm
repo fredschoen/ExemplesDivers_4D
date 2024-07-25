@@ -4,5 +4,8 @@ If (Form event code:C388=On Load:K2:1)
 	var tempoVar_h : Time
 	Form:C1466.fieldText:="[Parametre]ID"
 	tempoVar_h:=?01:02:03?
-	
+	$c:=New collection:C1472()
+	$c.push(New object:C1471("etat"; "dispo"))
+	$c.push(New object:C1471("etat"; "non dispo"))
+	Form:C1466.collection_c:=$c
 End if 

@@ -28,9 +28,17 @@ If (Form event code:C388=On Load:K2:1)
 		
 	End if 
 	WParea:=WP New:C1317($b)
-	WP SET DATA CONTEXT:C1786(WParea; Form:C1466.Ordonnance_e)
-	WP COMPUTE FORMULAS:C1707(WParea)
+	Form:C1466.redraw_b:=True:C214
 	
 End if 
 
-WP COMPUTE FORMULAS:C1707(WParea)
+If (Form:C1466.redraw_b)
+	WP SET DATA CONTEXT:C1786(WParea; Form:C1466.Ordonnance_e)
+	WP COMPUTE FORMULAS:C1707(WParea)
+	var $file_t; $d; $t : Text
+	$file_t:=System folder:C487(Desktop:K41:16)+"WritePro_temp"+".pdf"
+	WP EXPORT DOCUMENT:C1337(WParea; $file_t; wk pdf:K81:315)
+	WA OPEN URL:C1020(*; "WebArea"; $file_t)
+	Form:C1466.redraw_b:=False:C215
+	
+End if 
