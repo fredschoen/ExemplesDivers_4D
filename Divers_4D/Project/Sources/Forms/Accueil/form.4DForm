@@ -218,29 +218,11 @@
 					"left": 51,
 					"width": 107,
 					"height": 15
-				},
-				"Texte1": {
-					"type": "text",
-					"text": "non modifiable",
-					"top": 393,
-					"left": 51,
-					"width": 107,
-					"height": 15
-				},
-				"Zone de saisie1": {
-					"type": "input",
-					"left": 177,
-					"top": 397,
-					"width": 128,
-					"height": 16,
-					"dataSourceTypeHint": "number",
-					"numberFormat": "###,##0.00",
-					"method": "ObjectMethods/Zone de saisie1.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 202,
+	"geometryStamp": 203,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
