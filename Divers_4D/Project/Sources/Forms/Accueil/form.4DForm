@@ -206,7 +206,6 @@
 					"method": "ObjectMethods/z1.4dm",
 					"dataSource": "Form:C1466.z1",
 					"events": [
-						"onLoad",
 						"onClick",
 						"onDataChange"
 					]
@@ -218,11 +217,31 @@
 					"left": 51,
 					"width": 107,
 					"height": 15
+				},
+				"z2": {
+					"type": "input",
+					"left": 179,
+					"top": 394,
+					"width": 137,
+					"height": 16,
+					"method": "ObjectMethods/z2.4dm",
+					"dataSource": "Form:C1466.z2",
+					"events": [
+						"onAfterEdit"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "maxi 10 caracteres",
+					"top": 392,
+					"left": 52,
+					"width": 107,
+					"height": 15
 				}
 			}
 		}
 	],
-	"geometryStamp": 203,
+	"geometryStamp": 205,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

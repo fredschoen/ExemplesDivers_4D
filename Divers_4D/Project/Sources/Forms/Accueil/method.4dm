@@ -8,4 +8,6 @@ If (Form event code:C388=On Load:K2:1)
 	$c.push(New object:C1471("etat"; "dispo"))
 	$c.push(New object:C1471("etat"; "non dispo"))
 	Form:C1466.collection_c:=$c
+	Form:C1466.z1:="coucou tutu"
+	Form:C1466.z2:="ahah"
 End if 

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="Class_4D" uuid="CDF6EC52F5F3954AA318A853565E6673" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Sachet" uuid="A1C111ABE810B448B99491AE11511F88" id="1">
+		<field name="ID" uuid="4A7C94A623FC79428E1CB04454E681BB" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Nom" uuid="E511D43035B0814C85B280767E917331" type="10" limiting_length="255" id="2"/>
+		<field name="ID_Article" uuid="7E85090EB41EF54EA8F1EDBB6593FAEC" type="4" id="3"/>
+		<primary_key field_name="ID" field_uuid="4A7C94A623FC79428E1CB04454E681BB"/>
+		<table_extra input_form="Entree" output_form="Sortie">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="160" top="1" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Article" uuid="4CE7E282492A3942B0E04B1D484B0CFF" id="2">
+		<field name="ID" uuid="880AF59117CFCD44BDE01B68773982EA" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Nom" uuid="654CB02271202941B3E0F8B51679A2A8" type="10" limiting_length="255" id="2"/>
+		<primary_key field_name="ID" field_uuid="880AF59117CFCD44BDE01B68773982EA"/>
+		<table_extra output_form="Sortie" input_form="Entree">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="11" top="0" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="E4D5E9B657A3744185FF3055CF547E74" name_Nto1="article" name_1toN="sachets" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="7E85090EB41EF54EA8F1EDBB6593FAEC" name="ID_Article">
+				<table_ref uuid="A1C111ABE810B448B99491AE11511F88" name="Sachet"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="880AF59117CFCD44BDE01B68773982EA" name="ID">
+				<table_ref uuid="4CE7E282492A3942B0E04B1D484B0CFF" name="Article"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="240" green="240" blue="240" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" unique_keys="true" uuid="6A86FB62566115489BCB0C7ED7E8F1E2" type="7">
+		<field_ref uuid="880AF59117CFCD44BDE01B68773982EA" name="ID">
+			<table_ref uuid="4CE7E282492A3942B0E04B1D484B0CFF" name="Article"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="96FDFF0AA785554FA96BB7EE382EB32C" type="7">
+		<field_ref uuid="4A7C94A623FC79428E1CB04454E681BB" name="ID">
+			<table_ref uuid="A1C111ABE810B448B99491AE11511F88" name="Sachet"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>
