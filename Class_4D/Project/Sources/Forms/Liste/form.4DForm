@@ -40,7 +40,7 @@
 					"type": "listbox",
 					"left": 80,
 					"top": 45,
-					"width": 565,
+					"width": 709,
 					"height": 263,
 					"events": [
 						"onClick",
@@ -65,20 +65,54 @@
 						{
 							"header": {
 								"text": "Sachet",
+								"name": "Entête3"
+							},
+							"name": "Colonne3",
+							"footer": {
+								"name": "Pied3"
+							},
+							"dataSource": "This:C1470.Nom"
+						},
+						{
+							"header": {
+								"text": "NomCompletGet",
+								"name": "Entête5"
+							},
+							"name": "Colonne5",
+							"footer": {
+								"name": "Pied5"
+							},
+							"dataSource": "This:C1470.NomCompletGet"
+						},
+						{
+							"header": {
+								"text": "expr. (non triable)",
 								"name": "Entête2"
 							},
 							"name": "Colonne2",
 							"footer": {
 								"name": "Pied2"
 							},
-							"dataSource": "This:C1470.Nom"
+							"dataSource": "This:C1470.article.Nom+\", \"+This:C1470.Nom"
+						},
+						{
+							"header": {
+								"name": "Entête4",
+								"text": "ClassFunc (non triable)",
+								"dataSource": "This:C1470.NomComplet()"
+							},
+							"name": "Colonne4",
+							"footer": {
+								"name": "Pied4"
+							},
+							"dataSource": "This:C1470.NomComplet()"
 						}
 					]
 				}
 			}
 		}
 	],
-	"geometryStamp": 2,
+	"geometryStamp": 3,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
