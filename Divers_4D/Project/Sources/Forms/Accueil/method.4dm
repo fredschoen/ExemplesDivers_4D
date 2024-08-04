@@ -5,9 +5,10 @@ If (Form event code:C388=On Load:K2:1)
 	Form:C1466.fieldText:="[Parametre]ID"
 	tempoVar_h:=?01:02:03?
 	$c:=New collection:C1472()
-	$c.push(New object:C1471("etat"; "dispo"))
-	$c.push(New object:C1471("etat"; "non dispo"))
+	$c.push(New object:C1471("etat"; "dispo"; "nom"; "patatte"))
+	$c.push(New object:C1471("etat"; "non dispo"; "nom"; "carotte"))
 	Form:C1466.collection_c:=$c
 	Form:C1466.z1:="coucou tutu"
 	Form:C1466.z2:="ahah"
+	f_TriAccueilListBox1
 End if 

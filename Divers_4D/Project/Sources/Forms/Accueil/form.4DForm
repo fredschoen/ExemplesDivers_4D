@@ -33,8 +33,8 @@
 				"bToolFieldTextToPointer": {
 					"type": "button",
 					"text": "toolFieldTextToPointer",
-					"top": 68,
-					"left": 50,
+					"top": 85,
+					"left": 52,
 					"width": 100,
 					"height": 20,
 					"events": [
@@ -45,10 +45,10 @@
 				"bVariant": {
 					"type": "button",
 					"text": "Variant",
-					"top": 94,
-					"left": 50,
+					"top": 118,
+					"left": 52,
 					"width": 100,
-					"height": 20,
+					"height": 24,
 					"events": [
 						"onClick"
 					],
@@ -57,8 +57,8 @@
 				"bFixerTitre": {
 					"type": "button",
 					"text": "fixer titre",
-					"top": 116,
-					"left": 50,
+					"top": 211,
+					"left": 52,
 					"width": 100,
 					"height": 20,
 					"events": [
@@ -68,9 +68,9 @@
 				},
 				"LB1": {
 					"type": "listbox",
-					"left": 170,
-					"top": 116,
-					"width": 217,
+					"left": 172,
+					"top": 175,
+					"width": 317,
 					"height": 116,
 					"events": [
 						"onClick",
@@ -79,24 +79,41 @@
 						"onSelectionChange"
 					],
 					"sizingY": "fixed",
-					"sizingX": "grow",
+					"sizingX": "fixed",
 					"listboxType": "collection",
 					"dataSource": "Form:C1466.collection_c",
 					"metaSource": "listMetaInfo(This:C1470.etat)",
 					"columns": [
 						{
 							"header": {
+								"name": "e1",
+								"text": "Nom",
+								"dataSource": "triAccueilListbox1ColNom"
+							},
+							"name": "Colonne2",
+							"dataSource": "This:C1470.nom",
+							"footer": {
+								"name": "Pied2"
+							},
+							"minWidth": 100,
+							"maxWidth": 300,
+							"width": 200,
+							"events": []
+						},
+						{
+							"header": {
 								"text": "Header1",
-								"name": "Ent1"
+								"name": "Ent1",
+								"dataSource": "triAccueilListbox1Col2"
 							},
 							"name": "Colonne1",
 							"footer": {
 								"name": "Pied1"
 							},
-							"width": 200,
+							"width": 100,
 							"maxWidth": 200,
 							"dataSource": "This:C1470.etat",
-							"minWidth": 200
+							"minWidth": 50
 						}
 					]
 				},
@@ -126,8 +143,8 @@
 				},
 				"Zone de saisie": {
 					"type": "input",
-					"left": 170,
-					"top": 67,
+					"left": 172,
+					"top": 84,
 					"width": 200,
 					"height": 17,
 					"dataSource": "Form:C1466.fieldText",
@@ -161,10 +178,10 @@
 				"bListeChamps": {
 					"type": "button",
 					"text": "liste champs",
-					"top": 301,
-					"left": 49,
+					"top": 118,
+					"left": 172,
 					"width": 100,
-					"height": 20,
+					"height": 24,
 					"events": [
 						"onClick"
 					],
@@ -173,10 +190,10 @@
 				"ckCoche": {
 					"type": "checkbox",
 					"text": "coche_b",
-					"top": 261,
-					"left": 50,
-					"width": 163,
-					"height": 28,
+					"top": 114,
+					"left": 408,
+					"width": 70,
+					"height": 24,
 					"events": [
 						"onLoad",
 						"onClick"
@@ -188,8 +205,8 @@
 				"bBreak": {
 					"type": "button",
 					"text": "break",
-					"top": 331,
-					"left": 52,
+					"top": 118,
+					"left": 283,
 					"width": 98,
 					"height": 24,
 					"events": [
@@ -199,8 +216,8 @@
 				},
 				"z1": {
 					"type": "input",
-					"left": 178,
-					"top": 370,
+					"left": 179,
+					"top": 322,
 					"width": 137,
 					"height": 16,
 					"method": "ObjectMethods/z1.4dm",
@@ -213,15 +230,15 @@
 				"Texte": {
 					"type": "text",
 					"text": "non modifiable",
-					"top": 368,
-					"left": 51,
+					"top": 320,
+					"left": 52,
 					"width": 107,
 					"height": 15
 				},
 				"z2": {
 					"type": "input",
-					"left": 179,
-					"top": 394,
+					"left": 180,
+					"top": 346,
 					"width": 137,
 					"height": 16,
 					"method": "ObjectMethods/z2.4dm",
@@ -233,15 +250,39 @@
 				"Texte1": {
 					"type": "text",
 					"text": "maxi 10 caracteres",
-					"top": 392,
-					"left": 52,
+					"top": 344,
+					"left": 53,
 					"width": 107,
 					"height": 15
+				},
+				"bAjouterEtTrier": {
+					"type": "button",
+					"text": "Ajout & tri idem",
+					"top": 238,
+					"left": 52,
+					"width": 100,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAjouterEtTrier.4dm"
+				},
+				"bExporterTout": {
+					"type": "button",
+					"text": "Exporter tout",
+					"top": 147,
+					"left": 52,
+					"width": 100,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bExporterTout.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 205,
+	"geometryStamp": 320,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
