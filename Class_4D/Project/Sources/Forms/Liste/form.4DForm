@@ -41,7 +41,7 @@
 					"left": 80,
 					"top": 45,
 					"width": 709,
-					"height": 263,
+					"height": 105,
 					"events": [
 						"onClick",
 						"onHeaderClick",
@@ -108,11 +108,146 @@
 							"dataSource": "This:C1470.NomComplet()"
 						}
 					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"left": 89,
+					"top": 170,
+					"width": 148,
+					"height": 131,
+					"events": [
+						"onSelectionChange"
+					],
+					"dataSource": "Form:C1466.Article_es",
+					"listboxType": "collection",
+					"currentItemSource": "Form:C1466.Article_e",
+					"method": "ObjectMethods/List Box1.4dm",
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Entête6"
+							},
+							"name": "Colonne6",
+							"footer": {
+								"name": "Pied6"
+							},
+							"dataSource": "This:C1470.Nom"
+						}
+					]
+				},
+				"List Box2": {
+					"type": "listbox",
+					"left": 272,
+					"top": 193,
+					"width": 247,
+					"height": 108,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.Article_e.sachets",
+					"columns": [
+						{
+							"header": {
+								"text": "Sachet",
+								"name": "Entête8"
+							},
+							"name": "Colonne8",
+							"footer": {
+								"name": "Pied8"
+							},
+							"dataSource": "This:C1470.Nom",
+							"width": 101
+						},
+						{
+							"header": {
+								"text": "NomCompletGet",
+								"name": "Entête9"
+							},
+							"name": "Colonne9",
+							"footer": {
+								"name": "Pied9"
+							},
+							"dataSource": "This:C1470.NomCompletGet"
+						}
+					]
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "trace",
+					"top": 15,
+					"left": 15,
+					"width": 49,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton.4dm"
+				},
+				"Texte": {
+					"type": "text",
+					"text": "non triable",
+					"top": 174,
+					"left": 300,
+					"width": 70,
+					"height": 15
+				},
+				"List Box3": {
+					"type": "listbox",
+					"left": 532,
+					"top": 189,
+					"width": 247,
+					"height": 108,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.SachetsDeArticle_es",
+					"columns": [
+						{
+							"header": {
+								"text": "Sachet",
+								"name": "Entête7"
+							},
+							"name": "Colonne7",
+							"footer": {
+								"name": "Pied7"
+							},
+							"dataSource": "This:C1470.Nom",
+							"width": 101
+						},
+						{
+							"header": {
+								"text": "NomCompletGet",
+								"name": "Entête10"
+							},
+							"name": "Colonne10",
+							"footer": {
+								"name": "Pied10"
+							},
+							"dataSource": "This:C1470.NomCompletGet"
+						}
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "triable",
+					"top": 170,
+					"left": 560,
+					"width": 70,
+					"height": 15
 				}
 			}
 		}
 	],
-	"geometryStamp": 3,
+	"geometryStamp": 39,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
