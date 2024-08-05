@@ -57,7 +57,7 @@
 				"bFixerTitre": {
 					"type": "button",
 					"text": "fixer titre",
-					"top": 211,
+					"top": 222,
 					"left": 52,
 					"width": 100,
 					"height": 20,
@@ -69,7 +69,7 @@
 				"LB1": {
 					"type": "listbox",
 					"left": 172,
-					"top": 175,
+					"top": 186,
 					"width": 317,
 					"height": 116,
 					"events": [
@@ -217,7 +217,7 @@
 				"z1": {
 					"type": "input",
 					"left": 179,
-					"top": 322,
+					"top": 333,
 					"width": 137,
 					"height": 16,
 					"method": "ObjectMethods/z1.4dm",
@@ -230,7 +230,7 @@
 				"Texte": {
 					"type": "text",
 					"text": "non modifiable",
-					"top": 320,
+					"top": 331,
 					"left": 52,
 					"width": 107,
 					"height": 15
@@ -238,7 +238,7 @@
 				"z2": {
 					"type": "input",
 					"left": 180,
-					"top": 346,
+					"top": 357,
 					"width": 137,
 					"height": 16,
 					"method": "ObjectMethods/z2.4dm",
@@ -250,7 +250,7 @@
 				"Texte1": {
 					"type": "text",
 					"text": "maxi 10 caracteres",
-					"top": 344,
+					"top": 355,
 					"left": 53,
 					"width": 107,
 					"height": 15
@@ -258,7 +258,7 @@
 				"bAjouterEtTrier": {
 					"type": "button",
 					"text": "Ajout & tri idem",
-					"top": 238,
+					"top": 249,
 					"left": 52,
 					"width": 100,
 					"height": 20,
@@ -278,11 +278,23 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/bExporterTout.4dm"
+				},
+				"bImporterTout": {
+					"type": "button",
+					"text": "Importer tout",
+					"top": 147,
+					"left": 172,
+					"width": 100,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bImporterTout.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 320,
+	"geometryStamp": 334,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

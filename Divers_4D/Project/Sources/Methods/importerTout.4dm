@@ -1,0 +1,94 @@
+//%attributes = {}
+// importerTout
+//
+CONFIRM:C162("OK pour raz et importer tout ?"; "NON"; "OUI")
+If (ok=1)
+	return 
+End if 
+
+BACKUP:C887
+
+var $fileName_t : Text
+var $importFile_f : 4D:C1709.File
+var $fileContent_t : Text
+var $line_c : Collection
+var $line_t; $fieldType_t : Text
+var $column_c; $columnName_c : Collection
+var $lineNum_i; $columnNum_i : Integer
+
+//repertoire de l'import
+$exportFolder_fd:=Folder:C1567(fk resources folder:K87:11).folder("export")
+If (Not:C34($exportFolder_fd.exists))
+	ALERT:C41($exportFolder_fd.platformPath+"inexistant")
+	return 
+End if 
+
+For ($tableNumber_i; 1; Get last table number:C254)
+	
+	If (Not:C34(Is table number valid:C999($tableNumber_i)))
+		continue
+	End if 
+	//une table
+	$tableName_t:=Table name:C256($tableNumber_i)
+	$fileName_t:=$tableName_t+".txt"
+	
+	$importFile_f:=$exportFolder_fd.file($fileName_t)
+	If (Not:C34($importFile_f.exists))
+		ALERT:C41($importFile_f.platformPath+" non trouvé")
+		continue
+	End if 
+	
+	ds:C1482[$tableName_t].all().drop()
+	
+	$fileContent_t:=$importFile_f.getText()
+	
+	$line_c:=Split string:C1554($fileContent_t; Char:C90(Carriage return:K15:38))
+	
+	$lineNum_i:=0
+	
+	For each ($line_t; $line_c)
+		//une ligne d'une table
+		$lineNum_i+=1
+		$column_c:=Split string:C1554($line_t; Char:C90(Tab:K15:37))
+		
+		//mémoriser tous les noms de colonnes (=ligne 1)
+		If ($lineNum_i=1)
+			$columnName_c:=$column_c
+			continue
+		End if 
+		
+		$tableName_t:=Table name:C256($tableNumber_i)
+		$e:=ds:C1482[$tableName_t].new()
+		$columnNum_i:=0
+		
+		For each ($column_t; $column_c)
+			//un champs d'une ligne
+			$columnNum_i+=1
+			If ($columnNum_i=1)  //col 1 = nom table
+				continue
+			End if 
+			$fieldType_t:=ds:C1482[$tableName_t][$columnName_c[$columnNum_i-1]].type  //="number"
+			
+			Case of 
+				: ($fieldType_t="number")
+					$e[$columnName_c[$columnNum_i-1]]:=Num:C11($column_t)
+				: ($fieldType_t="date")
+					$e[$columnName_c[$columnNum_i-1]]:=Date:C102($column_t)
+				Else 
+					$e[$columnName_c[$columnNum_i-1]]:=$column_t
+			End case 
+			
+		End for each 
+		$o:=$e.save()
+		If (Not:C34($o.success))
+			ALERT:C41("save KO")
+			TRACE:C157
+		End if 
+		
+		//TODO: SET DATABASE PARAMETER([CONTRAT:3]; Table sequence number; $ID_Max)
+		
+	End for each 
+	
+End for 
+
+ALERT:C41("OK")
