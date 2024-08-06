@@ -1,20 +1,20 @@
 //%attributes = {}
 // importerTout
 //
+var $importFile_f : 4D:C1709.File
+var $fileName_t; $fileContent_t; $line_t; $fieldType_t : Text
+var $line_c; $column_c; $columnName_c : Collection
+var $lineNum_i; $columnNum_i; $tableNumber_i; $ID_Max_i : Integer
+var $tableToSearch_p : Pointer
+
+//confirmer
 CONFIRM:C162("OK pour raz et importer tout ?"; "NON"; "OUI")
 If (ok=1)
 	return 
 End if 
 
+//sauvegarde
 BACKUP:C887
-
-var $fileName_t : Text
-var $importFile_f : 4D:C1709.File
-var $fileContent_t : Text
-var $line_c : Collection
-var $line_t; $fieldType_t : Text
-var $column_c; $columnName_c : Collection
-var $lineNum_i; $columnNum_i : Integer
 
 //repertoire de l'import
 $exportFolder_fd:=Folder:C1567(fk resources folder:K87:11).folder("export")
@@ -85,9 +85,13 @@ For ($tableNumber_i; 1; Get last table number:C254)
 			TRACE:C157
 		End if 
 		
-		//TODO: SET DATABASE PARAMETER([CONTRAT:3]; Table sequence number; $ID_Max)
 		
 	End for each 
+	
+	//Maj dernier ID de la table
+	$ID_Max_i:=ds:C1482[$tableName_t].all().max("ID")
+	$tableToSearch_p:=Table:C252($tableNumber_i)
+	SET DATABASE PARAMETER:C642($tableToSearch_p->; Table sequence number:K37:31; $ID_Max_i)
 	
 End for 
 
