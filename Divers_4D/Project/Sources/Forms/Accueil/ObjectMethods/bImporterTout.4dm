@@ -1,4 +1,4 @@
 // Accueil.bImporterTout
 //
 
-importerTout()
+importAllData()

@@ -1,0 +1,7 @@
+Parametre	ID	Nom	Niv1	Niv2	
+Parametre	10	GenreQuoi		Action;Co_Dr;Musique;Reportage 
+Parametre	11	GenreQuoi	Action	Anglais;Français;Western;SF 
+Parametre	12	GenreQuoi	Co_Dr	Anglais;Français;Autres;Jeunes 
+Parametre	13	GenreQuoi	Musique	Concert;Film musical; Reportage musical;Enregistrement
+Parametre	14	GenreQuoi	Reportage	News;Sport;Bateau;Arts;Jeunes;Autres
+Parametre	15	COUCOU	MonTest	

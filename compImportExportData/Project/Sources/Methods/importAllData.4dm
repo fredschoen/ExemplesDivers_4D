@@ -1,10 +1,10 @@
-//%attributes = {}
-// importerTout
+//%attributes = {"shared":true}
+// importAllData
 //
 var $importFile_f : 4D:C1709.File
 var $fileName_t; $fileContent_t; $line_t; $fieldType_t : Text
 var $line_c; $column_c; $columnName_c : Collection
-var $lineNum_i; $columnNum_i; $tableNumber_i; $ID_Max_i : Integer
+var $lineNumber_i; $columnNumber_i; $tableNumber_i; $ID_Max_i : Integer
 var $tableToSearch_p : Pointer
 
 //confirmer
@@ -44,38 +44,38 @@ For ($tableNumber_i; 1; Get last table number:C254)
 	
 	$line_c:=Split string:C1554($fileContent_t; Char:C90(Carriage return:K15:38))
 	
-	$lineNum_i:=0
+	$lineNumber_i:=0
 	
 	For each ($line_t; $line_c)
 		//une ligne d'une table
-		$lineNum_i+=1
+		$lineNumber_i+=1
 		$column_c:=Split string:C1554($line_t; Char:C90(Tab:K15:37))
 		
 		//mémoriser tous les noms de colonnes (=ligne 1)
-		If ($lineNum_i=1)
+		If ($lineNumber_i=1)
 			$columnName_c:=$column_c
 			continue
 		End if 
 		
 		$tableName_t:=Table name:C256($tableNumber_i)
 		$e:=ds:C1482[$tableName_t].new()
-		$columnNum_i:=0
+		$columnNumber_i:=0
 		
 		For each ($column_t; $column_c)
 			//un champs d'une ligne
-			$columnNum_i+=1
-			If ($columnNum_i=1)  //col 1 = nom table
+			$columnNumber_i+=1
+			If ($columnNumber_i=1)  //col 1 = nom table
 				continue
 			End if 
-			$fieldType_t:=ds:C1482[$tableName_t][$columnName_c[$columnNum_i-1]].type  //="number"
+			$fieldType_t:=ds:C1482[$tableName_t][$columnName_c[$columnNumber_i-1]].type  //="number"
 			
 			Case of 
 				: ($fieldType_t="number")
-					$e[$columnName_c[$columnNum_i-1]]:=Num:C11($column_t)
+					$e[$columnName_c[$columnNumber_i-1]]:=Num:C11($column_t)
 				: ($fieldType_t="date")
-					$e[$columnName_c[$columnNum_i-1]]:=Date:C102($column_t)
+					$e[$columnName_c[$columnNumber_i-1]]:=Date:C102($column_t)
 				Else 
-					$e[$columnName_c[$columnNum_i-1]]:=$column_t
+					$e[$columnName_c[$columnNumber_i-1]]:=$column_t
 			End case 
 			
 		End for each 
