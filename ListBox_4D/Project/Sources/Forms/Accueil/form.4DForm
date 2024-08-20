@@ -1,0 +1,196 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onOutsideCall"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"listBoxEcriture": {
+					"type": "listbox",
+					"top": 94,
+					"left": 360,
+					"width": 277,
+					"height": 525,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"rowHeight": "1em",
+					"headerHeight": "24px",
+					"footerHeight": "1em",
+					"dataSource": "Form:C1466.echeance_es",
+					"currentItemSource": "Form:C1466.echeance_e",
+					"currentItemPositionSource": "",
+					"selectedItemsSource": "Form:C1466.EcheanceSel_es",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"verticalAlign": "middle",
+					"borderStyle": "none",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onSelectionChange"
+					],
+					"showFooters": true,
+					"fill": "#F5FBFF",
+					"alternateFill": "#E1F2FC",
+					"sizingX": "grow",
+					"right": 637,
+					"singleClickEdit": true,
+					"method": "ObjectMethods/listBoxEcriture.4dm",
+					"metaSource": "This:C1470.listBoxMetaInfo()",
+					"selectionMode": "multiple",
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.ID",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "right",
+							"verticalAlign": "middle",
+							"events": [
+								"onHeaderClick"
+							],
+							"header": {
+								"name": "Header1",
+								"verticalAlign": "middle",
+								"text": "ID",
+								"dataSource": "",
+								"stroke": "#21759B"
+							},
+							"footer": {
+								"name": "Footer1",
+								"verticalAlign": "middle",
+								"dataSourceTypeHint": "text",
+								"variableCalculation": "none"
+							},
+							"class": "",
+							"stroke": "#19294F",
+							"dataSourceTypeHint": "number",
+							"enterable": false
+						},
+						{
+							"header": {
+								"name": "Entête1",
+								"text": "Redir"
+							},
+							"name": "Colonne1",
+							"footer": {
+								"name": "Pied1"
+							},
+							"width": 50,
+							"maxWidth": 60,
+							"dataSource": "This:C1470.redirect",
+							"dataSourceTypeHint": "boolean",
+							"minWidth": 10,
+							"enterable": false
+						}
+					]
+				},
+				"redirectQuery": {
+					"type": "dropdown",
+					"left": 150,
+					"top": 205,
+					"width": 200,
+					"height": 25,
+					"events": [
+						"onLoad",
+						"onDataChange"
+					],
+					"right": 350,
+					"dataSourceTypeHint": "object",
+					"dataSource": "",
+					"method": "ObjectMethods/redirectQuery.4dm"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 209,
+					"left": 10,
+					"width": 133,
+					"height": 16,
+					"text": "Redirection",
+					"class": "cuLabel"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 209,
+					"left": 638,
+					"width": 200,
+					"height": 16,
+					"text": "Redirection",
+					"class": "cuLabel",
+					"sizingX": "move"
+				},
+				"redirectLabel": {
+					"type": "dropdown",
+					"top": 232,
+					"left": 648,
+					"width": 200,
+					"height": 20,
+					"dataSource": "",
+					"class": "Par_défaut",
+					"events": [
+						"onLoad",
+						"onClick"
+					],
+					"method": "ObjectMethods/redirectLabel.4dm",
+					"dataSourceTypeHint": "object",
+					"sizingX": "move"
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "Add",
+					"top": 346,
+					"left": 99,
+					"width": 129,
+					"height": 58,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton.4dm"
+				},
+				"Bouton1": {
+					"type": "button",
+					"text": "trace",
+					"top": 569,
+					"left": 43,
+					"width": 58,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton1.4dm"
+				}
+			}
+		}
+	],
+	"geometryStamp": 9,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

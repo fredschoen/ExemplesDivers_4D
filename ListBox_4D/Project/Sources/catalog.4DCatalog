@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="ListBox_4D" uuid="2574BA55A435E64EAB76EC64E8D39941" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Echeance" uuid="36017C9AE08C4D4F9B6F5D97E0DFE6F4" id="1">
+		<field name="ID" uuid="EE3721D21D45BC418806B098E2BE1CEB" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="redirect" uuid="6457149F20B32E4DBD8CF9C87B5A4E39" type="1" never_null="true" id="2"/>
+		<primary_key field_name="ID" field_uuid="EE3721D21D45BC418806B098E2BE1CEB"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="40" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="9318C73B8BF51747A0EFE53F406206D2" type="7">
+		<field_ref uuid="EE3721D21D45BC418806B098E2BE1CEB" name="ID">
+			<table_ref uuid="36017C9AE08C4D4F9B6F5D97E0DFE6F4" name="Echeance"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>
