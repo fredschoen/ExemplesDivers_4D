@@ -23,11 +23,19 @@
 		},
 		{
 			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 23,
+					"left": 8,
+					"width": 250,
+					"height": 149,
+					"fill": "transparent"
+				},
 				"listBoxEcriture": {
 					"type": "listbox",
-					"top": 94,
-					"left": 360,
-					"width": 277,
+					"top": 23,
+					"left": 287,
+					"width": 496,
 					"height": 525,
 					"sizingY": "grow",
 					"resizingMode": "legacy",
@@ -54,7 +62,7 @@
 					"fill": "#F5FBFF",
 					"alternateFill": "#E1F2FC",
 					"sizingX": "grow",
-					"right": 637,
+					"right": 783,
 					"singleClickEdit": true,
 					"method": "ObjectMethods/listBoxEcriture.4dm",
 					"metaSource": "This:C1470.listBoxMetaInfo()",
@@ -91,8 +99,24 @@
 						},
 						{
 							"header": {
-								"name": "Entête1",
+								"name": "Entête2",
 								"text": "Redir"
+							},
+							"name": "Colonne2",
+							"footer": {
+								"name": "Pied2"
+							},
+							"width": 194,
+							"maxWidth": 200,
+							"dataSource": "This:C1470.redirect",
+							"dataSourceTypeHint": "boolean",
+							"minWidth": 100,
+							"enterable": false
+						},
+						{
+							"header": {
+								"name": "Entête1",
+								"text": "date & heure"
 							},
 							"name": "Colonne1",
 							"footer": {
@@ -100,8 +124,8 @@
 							},
 							"width": 50,
 							"maxWidth": 60,
-							"dataSource": "This:C1470.redirect",
-							"dataSourceTypeHint": "boolean",
+							"dataSource": "This:C1470.timeStampLabel",
+							"dataSourceTypeHint": "text",
 							"minWidth": 10,
 							"enterable": false
 						}
@@ -109,23 +133,23 @@
 				},
 				"redirectQuery": {
 					"type": "dropdown",
-					"left": 150,
-					"top": 205,
+					"left": 26,
+					"top": 76,
 					"width": 200,
 					"height": 25,
 					"events": [
 						"onLoad",
 						"onDataChange"
 					],
-					"right": 350,
+					"right": 226,
 					"dataSourceTypeHint": "object",
 					"dataSource": "",
 					"method": "ObjectMethods/redirectQuery.4dm"
 				},
 				"Text17": {
 					"type": "text",
-					"top": 209,
-					"left": 10,
+					"top": 53,
+					"left": 8,
 					"width": 133,
 					"height": 16,
 					"text": "Redirection",
@@ -133,8 +157,8 @@
 				},
 				"Text18": {
 					"type": "text",
-					"top": 209,
-					"left": 638,
+					"top": 251,
+					"left": 13,
 					"width": 200,
 					"height": 16,
 					"text": "Redirection",
@@ -143,8 +167,8 @@
 				},
 				"redirectLabel": {
 					"type": "dropdown",
-					"top": 232,
-					"left": 648,
+					"top": 274,
+					"left": 23,
 					"width": 200,
 					"height": 20,
 					"dataSource": "",
@@ -160,8 +184,8 @@
 				"Bouton": {
 					"type": "button",
 					"text": "Add",
-					"top": 346,
-					"left": 99,
+					"top": 483,
+					"left": 111,
 					"width": 129,
 					"height": 58,
 					"events": [
@@ -172,19 +196,50 @@
 				"Bouton1": {
 					"type": "button",
 					"text": "trace",
-					"top": 569,
-					"left": 43,
+					"top": 526,
+					"left": 17,
 					"width": 58,
 					"height": 15,
 					"events": [
 						"onClick"
 					],
 					"method": "ObjectMethods/Bouton1.4dm"
+				},
+				"TextRecherche": {
+					"type": "text",
+					"top": 23,
+					"left": 8,
+					"width": 133,
+					"height": 16,
+					"text": "recherche",
+					"class": "cuLabel",
+					"textDecoration": "none",
+					"fontWeight": "bold"
+				},
+				"TextDetail": {
+					"type": "text",
+					"top": 215,
+					"left": 13,
+					"width": 133,
+					"height": 16,
+					"text": "Détail",
+					"class": "cuLabel",
+					"textDecoration": "none",
+					"fontWeight": "bold",
+					"fontStyle": "normal"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 215,
+					"left": 8,
+					"width": 237,
+					"height": 154,
+					"fill": "transparent"
 				}
 			}
 		}
 	],
-	"geometryStamp": 9,
+	"geometryStamp": 36,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
