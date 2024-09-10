@@ -51,6 +51,11 @@
 					"scrollbarHorizontal": "automatic",
 					"scrollbarVertical": "automatic",
 					"resizingMode": "legacy",
+					"events": [
+						"onDataChange"
+					],
+					"method": "ObjectMethods/listbox.4dm",
+					"currentItemSource": "Form:C1466.currentSelection_Cur",
 					"columns": [
 						{
 							"name": "ID",
@@ -59,7 +64,7 @@
 							"enterable": false,
 							"header": {
 								"text": "Id",
-								"name": ""
+								"name": "Entête1"
 							},
 							"footer": {
 								"name": "1"
@@ -92,9 +97,30 @@
 							}
 						}
 					]
+				},
+				"btAdd": {
+					"type": "button",
+					"text": "ajouter",
+					"top": 320,
+					"left": 168,
+					"width": 82,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btAdd.4dm",
+					"sizingY": "move"
 				}
 			}
 		}
 	],
-	"geometryStamp": 1
+	"geometryStamp": 5,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
 }
