@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="WebSever_4D" uuid="1C4B8376C794D14D815F5DCABCA817DA" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Jockeys" uuid="00B2172F84B94048A19EE6827E99FA11" id="1">
+		<field name="ID" uuid="F565CBAEB888DD4EABA58E8EDC775C95" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Name" uuid="1F9A37796CEF6B48BCF461C0BA7CA63F" type="10" limiting_length="255" id="2"/>
+		<field name="Tel" uuid="9EED0D5227CC1C43872901067332D880" type="10" limiting_length="255" id="3"/>
+		<primary_key field_name="ID" field_uuid="F565CBAEB888DD4EABA58E8EDC775C95"/>
+		<table_extra output_form="Formulaire1" input_form="Formulaire2">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="40" top="42" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="57ED98AEE554C14E951E6CBD07CFB5BB" type="7">
+		<field_ref uuid="F565CBAEB888DD4EABA58E8EDC775C95" name="ID">
+			<table_ref uuid="00B2172F84B94048A19EE6827E99FA11" name="Jockeys"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>
