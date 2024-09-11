@@ -104,11 +104,74 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "t"
+				},
+				"value": {
+					"type": "input",
+					"left": 59,
+					"top": 235,
+					"width": 197,
+					"height": 16
+				},
+				"Text3": {
+					"type": "text",
+					"top": 215,
+					"left": 41,
+					"width": 133,
+					"height": 16,
+					"text": "valeur",
+					"class": "cuLabel",
+					"sizingX": "fixed"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 166,
+					"left": 41,
+					"width": 133,
+					"height": 16,
+					"text": "opérateur",
+					"class": "cuLabel",
+					"sizingX": "fixed"
+				},
+				"ldOperateur": {
+					"type": "dropdown",
+					"left": 56,
+					"top": 190,
+					"width": 200,
+					"height": 25,
+					"events": [
+						"onLoad",
+						"onDataChange"
+					],
+					"right": 256,
+					"dataSourceTypeHint": "object",
+					"dataSource": "",
+					"method": "ObjectMethods/ldOperateur.4dm",
+					"sizingX": "fixed"
+				},
+				"btAdd": {
+					"type": "button",
+					"text": "Ajouter le critère à la requête",
+					"top": 271,
+					"left": 99,
+					"width": 183,
+					"height": 35,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btAdd.4dm"
 				}
-			}
+			},
+			"entryOrder": [
+				"lbTable",
+				"lbField",
+				"ldOperateur",
+				"value",
+				"btAdd",
+				"Bouton"
+			]
 		}
 	],
-	"geometryStamp": 9,
+	"geometryStamp": 28,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
