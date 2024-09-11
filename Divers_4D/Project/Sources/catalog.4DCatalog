@@ -15,9 +15,43 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
+	<table name="t1" uuid="11B08EBFA365474CBA406B4E4443543B" id="2">
+		<field name="ID" uuid="8701B8C182BC70479C252D654EBC8717" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="c1" uuid="75186C1E325D02489134F7429CB475DB" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="c2" uuid="B1643F2180E7B0469A8E7CF72DBA8816" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="c3" uuid="08E5E05B7F2D5E499B67A46C9A8F5056" type="10" limiting_length="255" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="8701B8C182BC70479C252D654EBC8717"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="240" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="t2" uuid="CB1F6BAED7632B4D8093339A787B5991" id="3">
+		<field name="ID" uuid="53A074ABC9C883428307F6E276ADA6A0" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="c1" uuid="656FA83B2B7EDB4BAABD058CD8E182A5" type="10" limiting_length="255" never_null="true" id="2"/>
+		<primary_key field_name="ID" field_uuid="53A074ABC9C883428307F6E276ADA6A0"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="440" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
 	<index kind="regular" unique_keys="true" uuid="95397EE954E8544D982C014963C3FB1E" type="7">
 		<field_ref uuid="846D17EB7BBFD74B92D7DA4DDCC14650" name="ID">
 			<table_ref uuid="8EA22EBDE95EF740B11C8B0134E55F9B" name="Parametre"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="F1420C0DA88AC546BA0736DBB84E2852" type="7">
+		<field_ref uuid="53A074ABC9C883428307F6E276ADA6A0" name="ID">
+			<table_ref uuid="CB1F6BAED7632B4D8093339A787B5991" name="t2"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="FEF07655C3187949BCA5CEA911FCC333" type="7">
+		<field_ref uuid="8701B8C182BC70479C252D654EBC8717" name="ID">
+			<table_ref uuid="11B08EBFA365474CBA406B4E4443543B" name="t1"/>
 		</field_ref>
 	</index>
 </base>

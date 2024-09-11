@@ -108,7 +108,7 @@ While (ok=1)
 					
 				End if 
 				
-				$txt+=String:C10($tabId*1000+$fldId; "000 000")+Char:C90(Tab:K15:37)+$tabName+", "+$fldName+Char:C90(Tab:K15:37)+$type+Char:C90(Tab:K15:37)+$commentaire+Char:C90(Carriage return:K15:38)
+				$txt+=String:C10($tabId; "t000")+" "+String:C10($fldId; "c000")+Char:C90(Tab:K15:37)+$tabName+", "+$fldName+Char:C90(Tab:K15:37)+$type+Char:C90(Tab:K15:37)+$commentaire+Char:C90(Carriage return:K15:38)
 				
 			End if 
 			

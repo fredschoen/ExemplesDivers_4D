@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="DataStore_4D" uuid="B3C7D562968C434889644896485AC3CB" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="t1" uuid="9C23939B9CAF754EA5499D9FD016D0D7" id="1">
+		<field name="ID" uuid="1C96EC076124A44CB4D340B2C0A2E319" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="c1" uuid="D77B5FB388319E4F93B4E177F14DA3D4" type="10" limiting_length="255" id="2"/>
+		<field name="c2" uuid="FF9A3F41E910B044BA53DFE11D64D4BC" type="10" limiting_length="255" id="3"/>
+		<primary_key field_name="ID" field_uuid="1C96EC076124A44CB4D340B2C0A2E319"/>
+		<table_extra output_form="liste" input_form="detail">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="40" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="45C736B05F514742AE28F8358C02383F" type="7">
+		<field_ref uuid="1C96EC076124A44CB4D340B2C0A2E319" name="ID">
+			<table_ref uuid="9C23939B9CAF754EA5499D9FD016D0D7" name="t1"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>
