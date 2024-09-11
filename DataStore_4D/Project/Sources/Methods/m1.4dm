@@ -10,8 +10,7 @@ $query_t:=$f+" = :p1"
 
 $x:=ds:C1482[$t].query($query_t; $querySettings_o)
 
-
-
+//
 $querySettings_o:=New object:C1471("parameters"; New object:C1471(); "context"; "liste")
 
 $f:=Field name:C257(1; 3)
@@ -19,3 +18,10 @@ $querySettings_o.parameters.p1:="2@"
 $query_t:=$f+" = :p1"
 
 $x:=$x.query($query_t; $querySettings_o)
+
+OB GET PROPERTY NAMES:C1232(ds:C1482; $table_tb)
+
+OB GET PROPERTY NAMES:C1232(ds:C1482[$table_tb{1}]; $field_tb)
+
+TRACE:C157
+

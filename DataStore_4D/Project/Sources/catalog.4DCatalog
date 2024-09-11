@@ -14,9 +14,26 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
+	<table name="t2" uuid="5CECB3820074B948B2BCFEF158C36532" id="2">
+		<field name="ID" uuid="5EBFDA05825B354FABF2A20AFAA44CD2" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="d1" uuid="01925F128BA6D748AA63EFFBC7D35B66" type="10" limiting_length="255" id="2"/>
+		<field name="d2" uuid="2E9F3E60B4893348BFDC8F6713C079DD" type="10" limiting_length="255" id="3"/>
+		<primary_key field_name="ID" field_uuid="5EBFDA05825B354FABF2A20AFAA44CD2"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="240" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
 	<index kind="regular" unique_keys="true" uuid="45C736B05F514742AE28F8358C02383F" type="7">
 		<field_ref uuid="1C96EC076124A44CB4D340B2C0A2E319" name="ID">
 			<table_ref uuid="9C23939B9CAF754EA5499D9FD016D0D7" name="t1"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="FB64790D801AC44FA53E6A175951725B" type="7">
+		<field_ref uuid="5EBFDA05825B354FABF2A20AFAA44CD2" name="ID">
+			<table_ref uuid="5CECB3820074B948B2BCFEF158C36532" name="t2"/>
 		</field_ref>
 	</index>
 	<base_extra>

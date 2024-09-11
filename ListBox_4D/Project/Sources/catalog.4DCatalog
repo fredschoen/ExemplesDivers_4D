@@ -14,6 +14,41 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
+	<table name="Table_1" uuid="321ED16CFBABF94BBE69F6BE543E6841" id="2">
+		<field name="ID" uuid="183C62EB9C425F41B27B87D9B3EC6537" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Champ_2" uuid="D51674D4D7CF8E43818C13778618363A" type="10" limiting_length="255" id="2"/>
+		<field name="Champ_3" uuid="7F9DE1236E630F4395A4068AD5F4ACD8" type="10" limiting_length="255" id="3"/>
+		<primary_key field_name="ID" field_uuid="183C62EB9C425F41B27B87D9B3EC6537"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="240" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="aTable_2" uuid="7AB1D5C6E0AF624FA8A5166AF673B73E" id="3">
+		<field name="ID" uuid="2DE6D319F10EE645A8D7248D6C589C0B" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Champ_2" uuid="BD1D6C65F8207D41858C5D45FF0C2A17" type="10" limiting_length="255" id="2"/>
+		<field name="Champ_3" uuid="7E2FAEAF57E0FD46AC7268367DF7DA83" type="10" limiting_length="255" id="3"/>
+		<field name="Champ_4" uuid="5A3FF61C0AE058489F2D833B42B24B23" type="10" limiting_length="255" id="4"/>
+		<primary_key field_name="ID" field_uuid="2DE6D319F10EE645A8D7248D6C589C0B"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="440" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="29038DA673FE8A4F89386A2DFA930BD3" type="7">
+		<field_ref uuid="183C62EB9C425F41B27B87D9B3EC6537" name="ID">
+			<table_ref uuid="321ED16CFBABF94BBE69F6BE543E6841" name="Table_1"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="DF05FDA9B320E14184A50535C90E2349" type="7">
+		<field_ref uuid="2DE6D319F10EE645A8D7248D6C589C0B" name="ID">
+			<table_ref uuid="7AB1D5C6E0AF624FA8A5166AF673B73E" name="aTable_2"/>
+		</field_ref>
+	</index>
 	<index kind="regular" unique_keys="true" uuid="F4AC36B9BC6BC84FB30F1EF8F8693747" type="1">
 		<field_ref uuid="EE3721D21D45BC418806B098E2BE1CEB" name="ID">
 			<table_ref uuid="36017C9AE08C4D4F9B6F5D97E0DFE6F4" name="Echeance"/>
