@@ -19,12 +19,38 @@
 	"pages": [
 		{
 			"objects": {
+				"btQuit": {
+					"type": "button",
+					"text": "quit (ctrl+w)",
+					"top": 97,
+					"left": 151,
+					"width": 98,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "w",
+					"method": "ObjectMethods/btQuit.4dm"
+				},
 				"Rectangle": {
 					"type": "rectangle",
 					"top": 63,
 					"left": 17,
 					"width": 498,
 					"height": 384
+				},
+				"Texte3": {
+					"type": "text",
+					"text": "ctrl+w <=> accept (bouton caché page 0, pour ne pas subir les modif du setting)",
+					"top": 458,
+					"left": 64,
+					"width": 451,
+					"height": 15
 				}
 			}
 		},
@@ -309,7 +335,7 @@
 			}
 		}
 	],
-	"geometryStamp": 516,
+	"geometryStamp": 525,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
