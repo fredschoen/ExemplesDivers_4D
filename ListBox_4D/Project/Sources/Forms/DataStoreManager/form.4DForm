@@ -1,0 +1,174 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "Requête sur le Datastore",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"lbTable": {
+					"type": "dropdown",
+					"left": 56,
+					"top": 53,
+					"width": 200,
+					"height": 25,
+					"events": [
+						"onLoad",
+						"onDataChange"
+					],
+					"right": 256,
+					"dataSourceTypeHint": "object",
+					"dataSource": "",
+					"method": "ObjectMethods/lbTable.4dm",
+					"sizingX": "fixed"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 30,
+					"left": 41,
+					"width": 133,
+					"height": 16,
+					"text": "table",
+					"class": "cuLabel",
+					"sizingX": "fixed"
+				},
+				"lbField": {
+					"type": "dropdown",
+					"left": 56,
+					"top": 115,
+					"width": 200,
+					"height": 25,
+					"events": [
+						"onLoad",
+						"onDataChange"
+					],
+					"right": 256,
+					"dataSourceTypeHint": "object",
+					"dataSource": "",
+					"sizingX": "fixed"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 92,
+					"left": 41,
+					"width": 133,
+					"height": 16,
+					"text": "champs",
+					"class": "cuLabel",
+					"sizingX": "fixed"
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "(t)race",
+					"top": 299,
+					"left": 8,
+					"width": 45,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "btTrace",
+					"method": "ObjectMethods/Bouton.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t"
+				},
+				"value": {
+					"type": "input",
+					"left": 59,
+					"top": 229,
+					"width": 197,
+					"height": 16
+				},
+				"Text3": {
+					"type": "text",
+					"top": 209,
+					"left": 41,
+					"width": 133,
+					"height": 16,
+					"text": "valeur",
+					"class": "cuLabel",
+					"sizingX": "fixed"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 160,
+					"left": 41,
+					"width": 133,
+					"height": 16,
+					"text": "opérateur",
+					"class": "cuLabel",
+					"sizingX": "fixed"
+				},
+				"ldOperateur": {
+					"type": "dropdown",
+					"left": 56,
+					"top": 184,
+					"width": 200,
+					"height": 25,
+					"events": [
+						"onLoad",
+						"onDataChange"
+					],
+					"right": 256,
+					"dataSourceTypeHint": "object",
+					"dataSource": "",
+					"method": "ObjectMethods/ldOperateur.4dm",
+					"sizingX": "fixed"
+				},
+				"btAdd": {
+					"type": "button",
+					"text": "Ajouter le critère à la requête",
+					"top": 265,
+					"left": 99,
+					"width": 183,
+					"height": 35,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btAdd.4dm"
+				}
+			}
+		}
+	],
+	"geometryStamp": 17,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

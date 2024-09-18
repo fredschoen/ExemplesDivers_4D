@@ -30,7 +30,8 @@
 					"width": 250,
 					"height": 118,
 					"fill": "#fffacd",
-					"sizingX": "fixed"
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Rectangle": {
 					"type": "rectangle",
@@ -39,14 +40,15 @@
 					"width": 250,
 					"height": 102,
 					"fill": "transparent",
-					"sizingX": "fixed"
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"listBoxEcriture": {
 					"type": "listbox",
 					"top": 23,
 					"left": 287,
 					"width": 496,
-					"height": 174,
+					"height": 171,
 					"sizingY": "grow",
 					"resizingMode": "legacy",
 					"listboxType": "collection",
@@ -68,7 +70,7 @@
 						"onClick",
 						"onSelectionChange"
 					],
-					"showFooters": true,
+					"showFooters": false,
 					"fill": "#F5FBFF",
 					"alternateFill": "#E1F2FC",
 					"sizingX": "grow",
@@ -76,7 +78,7 @@
 					"singleClickEdit": true,
 					"method": "ObjectMethods/listBoxEcriture.4dm",
 					"metaSource": "This:C1470.listBoxMetaInfo()",
-					"selectionMode": "multiple",
+					"selectionMode": "single",
 					"columns": [
 						{
 							"name": "Column1",
@@ -155,7 +157,8 @@
 					"dataSourceTypeHint": "object",
 					"dataSource": "",
 					"method": "ObjectMethods/redirectQuery.4dm",
-					"sizingX": "fixed"
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Text17": {
 					"type": "text",
@@ -165,7 +168,8 @@
 					"height": 16,
 					"text": "Redirection",
 					"class": "cuLabel",
-					"sizingX": "fixed"
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Text18": {
 					"type": "text",
@@ -175,7 +179,8 @@
 					"height": 16,
 					"text": "Redirection",
 					"class": "cuLabel",
-					"sizingX": "fixed"
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"redirectLabel": {
 					"type": "dropdown",
@@ -191,32 +196,35 @@
 					],
 					"method": "ObjectMethods/redirectLabel.4dm",
 					"dataSourceTypeHint": "object",
-					"sizingX": "fixed"
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Bouton": {
 					"type": "button",
 					"text": "Add",
-					"top": 208,
-					"left": 403,
+					"top": 203,
+					"left": 287,
 					"width": 189,
 					"height": 34,
 					"events": [
 						"onClick"
 					],
 					"method": "ObjectMethods/Bouton.4dm",
-					"sizingY": "move"
+					"sizingY": "move",
+					"sizingX": "fixed"
 				},
 				"Bouton1": {
 					"type": "button",
 					"text": "trace",
-					"top": 526,
-					"left": 17,
+					"top": 419,
+					"left": 32,
 					"width": 58,
 					"height": 15,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Bouton1.4dm"
+					"method": "ObjectMethods/Bouton1.4dm",
+					"sizingY": "fixed"
 				},
 				"TextRecherche": {
 					"type": "text",
@@ -228,7 +236,8 @@
 					"class": "cuLabel",
 					"textDecoration": "none",
 					"fontWeight": "bold",
-					"sizingX": "fixed"
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"TextDetail": {
 					"type": "text",
@@ -241,89 +250,38 @@
 					"textDecoration": "none",
 					"fontWeight": "bold",
 					"fontStyle": "normal",
-					"sizingX": "fixed"
-				},
-				"lbTable": {
-					"type": "dropdown",
-					"left": 28,
-					"top": 301,
-					"width": 200,
-					"height": 25,
-					"events": [
-						"onLoad",
-						"onDataChange"
-					],
-					"right": 228,
-					"dataSourceTypeHint": "object",
-					"dataSource": "",
-					"method": "ObjectMethods/lbTable.4dm",
-					"sizingX": "fixed"
-				},
-				"Text1": {
-					"type": "text",
-					"top": 278,
-					"left": 13,
-					"width": 133,
-					"height": 16,
-					"text": "table",
-					"class": "cuLabel",
-					"sizingX": "fixed"
-				},
-				"lbField": {
-					"type": "dropdown",
-					"left": 28,
-					"top": 369,
-					"width": 200,
-					"height": 25,
-					"events": [
-						"onLoad",
-						"onDataChange"
-					],
-					"right": 228,
-					"dataSourceTypeHint": "object",
-					"dataSource": "",
-					"method": "ObjectMethods/lbField.4dm",
-					"sizingX": "fixed"
-				},
-				"Text2": {
-					"type": "text",
-					"top": 346,
-					"left": 13,
-					"width": 133,
-					"height": 16,
-					"text": "champs",
-					"class": "cuLabel",
-					"sizingX": "fixed"
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Text30": {
 					"type": "text",
-					"top": 305,
-					"left": 367,
+					"top": 260,
+					"left": 11,
 					"width": 60,
 					"height": 16,
 					"text": "Type",
 					"class": "cuLabel",
-					"right": 427,
+					"right": 71,
 					"sizingY": "fixed",
-					"sizingX": "move"
+					"sizingX": "fixed"
 				},
 				"Text31": {
 					"type": "text",
-					"top": 341,
-					"left": 367,
+					"top": 308,
+					"left": 11,
 					"width": 60,
 					"height": 16,
 					"text": "Statut",
 					"class": "cuLabel",
-					"right": 427,
+					"right": 71,
 					"sizingY": "fixed",
-					"sizingX": "move"
+					"sizingX": "fixed"
 				},
 				"ldRecEventStatus": {
 					"type": "dropdown",
-					"left": 442,
-					"top": 337,
-					"width": 253,
+					"left": 26,
+					"top": 332,
+					"width": 232,
 					"height": 24,
 					"events": [
 						"onLoad",
@@ -332,13 +290,13 @@
 					"method": "ObjectMethods/ldRecEventStatus.4dm",
 					"dataSourceTypeHint": "object",
 					"sizingY": "fixed",
-					"sizingX": "move"
+					"sizingX": "fixed"
 				},
 				"ldRecEventType": {
 					"type": "dropdown",
-					"left": 441,
-					"top": 301,
-					"width": 254,
+					"left": 23,
+					"top": 279,
+					"width": 233,
 					"height": 20,
 					"events": [
 						"onLoad",
@@ -347,12 +305,47 @@
 					"method": "ObjectMethods/ldRecEventType.4dm",
 					"dataSourceTypeHint": "object",
 					"sizingY": "fixed",
-					"sizingX": "move"
+					"sizingX": "fixed"
+				},
+				"btDataStoreManager": {
+					"type": "button",
+					"text": "DataStoreManager",
+					"top": 287,
+					"left": 365,
+					"width": 250,
+					"height": 57,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDataStoreManager.4dm",
+					"fontSize": 14,
+					"sizingY": "fixed"
+				},
+				"Séparateur": {
+					"type": "splitter",
+					"left": 32,
+					"top": 257,
+					"width": 731,
+					"height": 10
+				},
+				"Séparateur1": {
+					"type": "splitter",
+					"left": 20,
+					"top": 373,
+					"width": 743,
+					"height": 7
+				},
+				"Séparateur2": {
+					"type": "splitter",
+					"left": 303,
+					"top": 262,
+					"width": 6,
+					"height": 118
 				}
 			}
 		}
 	],
-	"geometryStamp": 165,
+	"geometryStamp": 238,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
