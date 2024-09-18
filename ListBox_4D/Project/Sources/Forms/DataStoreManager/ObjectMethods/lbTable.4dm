@@ -26,8 +26,15 @@ If (Form event code:C388=On Load:K2:1)
 	OBJECT Get pointer:C1124->values:=$table_c
 	OBJECT Get pointer:C1124->index:=0
 	
-	//OBJECT Get pointer->values:=Storage.recEventStatus.query("type is :1"; "mail")[0].values
+	//init la query
 	
+	Form:C1466.tableName_t:=$table_tb{1}  // sinon KO: OBJECT Get pointer->currentValue
+	Form:C1466.operator_t:="="
+	Form:C1466.value_t:=Char:C90(Quote:K15:44)+"xxx"+Char:C90(Quote:K15:44)
+	
+	Form:C1466.query_t:="ds."+Form:C1466.tableName_t+".all()"
+	
+	//init la lb des champs
 	OB GET PROPERTY NAMES:C1232(ds:C1482[$table_tb{1}]; $field_tb)
 	ARRAY TO COLLECTION:C1563($field_c; $field_tb)
 	
@@ -35,16 +42,22 @@ If (Form event code:C388=On Load:K2:1)
 	OBJECT Get pointer:C1124(Object named:K67:5; "lbField")->values:=$field_c
 	OBJECT Get pointer:C1124(Object named:K67:5; "lbField")->index:=0
 	
+	Form:C1466.fieldName_t:=$field_c[0]
+	Form:C1466.fieldName_c:=$field_c  // pour les entete de colonne
+	
 End if 
 
 If (Form event code:C388=On Data Change:K2:15)
 	
-	$tableName_t:=OBJECT Get pointer:C1124->currentValue
+	Form:C1466.tableName_t:=OBJECT Get pointer:C1124->currentValue
 	
-	OB GET PROPERTY NAMES:C1232(ds:C1482[$tableName_t]; $field_tb)
+	OB GET PROPERTY NAMES:C1232(ds:C1482[Form:C1466.tableName_t]; $field_tb)
 	ARRAY TO COLLECTION:C1563($field_c; $field_tb)
 	
 	OBJECT Get pointer:C1124(Object named:K67:5; "lbField")->values:=$field_c
 	OBJECT Get pointer:C1124(Object named:K67:5; "lbField")->index:=0
+	
+	//init la query
+	Form:C1466.query_t:="ds."+Form:C1466.tableName_t+".all()"
 	
 End if 

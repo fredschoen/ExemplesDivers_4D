@@ -36,62 +36,21 @@
 		},
 		{
 			"objects": {
-				"lbTable": {
-					"type": "dropdown",
-					"left": 56,
-					"top": 53,
-					"width": 200,
-					"height": 25,
-					"events": [
-						"onLoad",
-						"onDataChange"
-					],
-					"right": 256,
-					"dataSourceTypeHint": "object",
-					"dataSource": "",
-					"method": "ObjectMethods/lbTable.4dm",
-					"sizingX": "fixed"
-				},
 				"Text1": {
 					"type": "text",
 					"top": 30,
 					"left": 41,
-					"width": 133,
-					"height": 16,
+					"width": 60,
+					"height": 24,
 					"text": "table",
-					"class": "cuLabel",
-					"sizingX": "fixed"
-				},
-				"lbField": {
-					"type": "dropdown",
-					"left": 56,
-					"top": 115,
-					"width": 200,
-					"height": 25,
-					"events": [
-						"onLoad",
-						"onDataChange"
-					],
-					"right": 256,
-					"dataSourceTypeHint": "object",
-					"dataSource": "",
-					"sizingX": "fixed"
-				},
-				"Text2": {
-					"type": "text",
-					"top": 92,
-					"left": 41,
-					"width": 133,
-					"height": 16,
-					"text": "champs",
 					"class": "cuLabel",
 					"sizingX": "fixed"
 				},
 				"Bouton": {
 					"type": "button",
 					"text": "(t)race",
-					"top": 299,
-					"left": 8,
+					"top": 10,
+					"left": 716,
 					"width": 45,
 					"height": 24,
 					"events": [
@@ -105,49 +64,165 @@
 					"shortcutAlt": false,
 					"shortcutKey": "t"
 				},
-				"value": {
+				"lbTable": {
+					"type": "dropdown",
+					"left": 110,
+					"top": 30,
+					"width": 210,
+					"height": 22,
+					"events": [
+						"onLoad",
+						"onDataChange"
+					],
+					"right": 320,
+					"dataSourceTypeHint": "object",
+					"dataSource": "",
+					"method": "ObjectMethods/lbTable.4dm",
+					"sizingX": "fixed"
+				},
+				"zQuery": {
 					"type": "input",
-					"left": 59,
-					"top": 229,
-					"width": 197,
-					"height": 16
+					"left": 41,
+					"top": 172,
+					"width": 463,
+					"height": 24,
+					"dataSource": "Form:C1466.query_t",
+					"events": [
+						"onLoad"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"left": 41,
+					"top": 221,
+					"width": 680,
+					"height": 185,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.table_es",
+					"sizingY": "grow",
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Entête1"
+							},
+							"name": "Colonne1",
+							"footer": {
+								"name": "Pied1"
+							},
+							"dataSource": "This:C1470.ID"
+						}
+					]
+				},
+				"bValidate": {
+					"type": "button",
+					"text": "Exécuter",
+					"top": 167,
+					"left": 537,
+					"width": 83,
+					"height": 39,
+					"style": "regular",
+					"iconFrames": 4,
+					"icon": "",
+					"action": "",
+					"method": "ObjectMethods/bValidate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lbField": {
+					"type": "dropdown",
+					"left": 110,
+					"top": 59,
+					"width": 210,
+					"height": 22,
+					"events": [
+						"onDataChange"
+					],
+					"right": 320,
+					"dataSourceTypeHint": "object",
+					"dataSource": "",
+					"sizingX": "fixed",
+					"method": "ObjectMethods/lbField.4dm"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 67,
+					"left": 41,
+					"width": 60,
+					"height": 24,
+					"text": "champs",
+					"class": "cuLabel",
+					"sizingX": "fixed"
+				},
+				"zValue": {
+					"type": "input",
+					"left": 110,
+					"top": 125,
+					"width": 210,
+					"height": 22,
+					"events": [
+						"onDataChange"
+					],
+					"method": "ObjectMethods/zValue.4dm",
+					"dataSource": "Form:C1466.value_t"
 				},
 				"Text3": {
 					"type": "text",
-					"top": 209,
+					"top": 125,
 					"left": 41,
-					"width": 133,
-					"height": 16,
+					"width": 60,
+					"height": 24,
 					"text": "valeur",
 					"class": "cuLabel",
 					"sizingX": "fixed"
 				},
 				"Text4": {
 					"type": "text",
-					"top": 160,
+					"top": 97,
 					"left": 41,
-					"width": 133,
-					"height": 16,
+					"width": 60,
+					"height": 24,
 					"text": "opérateur",
 					"class": "cuLabel",
 					"sizingX": "fixed"
 				},
 				"ldOperateur": {
 					"type": "dropdown",
-					"left": 56,
-					"top": 184,
-					"width": 200,
-					"height": 25,
+					"left": 110,
+					"top": 93,
+					"width": 210,
+					"height": 22,
 					"events": [
 						"onLoad",
 						"onDataChange"
 					],
-					"right": 256,
+					"right": 320,
 					"dataSourceTypeHint": "object",
 					"dataSource": "",
 					"method": "ObjectMethods/ldOperateur.4dm",
 					"sizingX": "fixed"
-				},
+				}
+			},
+			"entryOrder": [
+				"lbTable",
+				"lbField",
+				"ldOperateur",
+				"zValue",
+				"zQuery",
+				"bValidate",
+				"List Box",
+				"Bouton"
+			]
+		},
+		{
+			"objects": {
 				"btAdd": {
 					"type": "button",
 					"text": "Ajouter le critère à la requête",
@@ -159,11 +234,19 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/btAdd.4dm"
+				},
+				"Texte": {
+					"type": "text",
+					"text": "page créée pour sauvegarde",
+					"top": 22,
+					"left": 53,
+					"width": 451,
+					"height": 15
 				}
 			}
 		}
 	],
-	"geometryStamp": 17,
+	"geometryStamp": 100,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
