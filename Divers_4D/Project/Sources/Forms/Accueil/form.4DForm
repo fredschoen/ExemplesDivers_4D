@@ -12,7 +12,10 @@
 	"rightMargin": 20,
 	"bottomMargin": 20,
 	"events": [
-		"onLoad"
+		"onLoad",
+		"onDrop",
+		"onDragOver",
+		"onBeginDragOver"
 	],
 	"windowTitle": "window title",
 	"destination": "detailScreen",
@@ -107,9 +110,12 @@
 					"height": 116,
 					"events": [
 						"onClick",
-						"onHeaderClick",
+						"onDrop",
 						"onDataChange",
-						"onSelectionChange"
+						"onDragOver",
+						"onSelectionChange",
+						"onHeaderClick",
+						"onBeginDragOver"
 					],
 					"sizingY": "fixed",
 					"sizingX": "fixed",
@@ -331,11 +337,31 @@
 					"left": 63,
 					"width": 70,
 					"height": 15
+				},
+				"zEvent_t": {
+					"type": "input",
+					"left": 387,
+					"top": 38,
+					"width": 119,
+					"height": 16,
+					"dataSource": "Form:C1466.event_t"
+				},
+				"btUseLocalizedLanguageFalse": {
+					"type": "button",
+					"text": "useLocalizedLanguageFalse",
+					"top": 405,
+					"left": 54,
+					"width": 157,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btUseLocalizedLanguageFalse.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 525,
+	"geometryStamp": 531,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
