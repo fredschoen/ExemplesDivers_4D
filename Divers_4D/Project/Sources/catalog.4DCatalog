@@ -21,7 +21,7 @@
 		<field name="c2" uuid="B1643F2180E7B0469A8E7CF72DBA8816" type="10" limiting_length="255" never_null="true" id="3"/>
 		<field name="c3" uuid="08E5E05B7F2D5E499B67A46C9A8F5056" type="10" limiting_length="255" never_null="true" id="4"/>
 		<primary_key field_name="ID" field_uuid="8701B8C182BC70479C252D654EBC8717"/>
-		<table_extra>
+		<table_extra output_form="Formulaire1" input_form="Saisie">
 			<editor_table_info displayable_fields_count="6">
 				<color red="255" green="255" blue="255" alpha="0"/>
 				<coordinates left="240" top="40" width="120" height="167.33203125"/>

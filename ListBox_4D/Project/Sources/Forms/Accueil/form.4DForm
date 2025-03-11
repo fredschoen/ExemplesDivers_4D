@@ -25,10 +25,10 @@
 			"objects": {
 				"Rectangle1": {
 					"type": "rectangle",
-					"top": 124,
-					"left": 8,
-					"width": 250,
-					"height": 118,
+					"top": 197,
+					"left": 487,
+					"width": 281,
+					"height": 83,
 					"fill": "#fffacd",
 					"sizingX": "fixed",
 					"sizingY": "fixed"
@@ -173,8 +173,8 @@
 				},
 				"Text18": {
 					"type": "text",
-					"top": 160,
-					"left": 13,
+					"top": 233,
+					"left": 492,
 					"width": 200,
 					"height": 16,
 					"text": "Redirection",
@@ -184,9 +184,9 @@
 				},
 				"redirectLabel": {
 					"type": "dropdown",
-					"top": 183,
-					"left": 23,
-					"width": 200,
+					"top": 236,
+					"left": 561,
+					"width": 171,
 					"height": 20,
 					"dataSource": "",
 					"class": "Par_défaut",
@@ -241,8 +241,8 @@
 				},
 				"TextDetail": {
 					"type": "text",
-					"top": 127,
-					"left": 13,
+					"top": 200,
+					"left": 492,
 					"width": 133,
 					"height": 16,
 					"text": "Détail (modifiable)",
@@ -255,32 +255,32 @@
 				},
 				"Text30": {
 					"type": "text",
-					"top": 260,
-					"left": 11,
-					"width": 60,
-					"height": 16,
+					"top": 312,
+					"left": 50,
+					"width": 40,
+					"height": 15,
 					"text": "Type",
 					"class": "cuLabel",
-					"right": 71,
+					"right": 90,
 					"sizingY": "fixed",
 					"sizingX": "fixed"
 				},
 				"Text31": {
 					"type": "text",
-					"top": 308,
-					"left": 11,
-					"width": 60,
-					"height": 16,
+					"top": 342,
+					"left": 94,
+					"width": 41,
+					"height": 15,
 					"text": "Statut",
 					"class": "cuLabel",
-					"right": 71,
+					"right": 135,
 					"sizingY": "fixed",
 					"sizingX": "fixed"
 				},
 				"ldRecEventStatus": {
 					"type": "dropdown",
-					"left": 26,
-					"top": 332,
+					"left": 142,
+					"top": 339,
 					"width": 232,
 					"height": 24,
 					"events": [
@@ -294,8 +294,8 @@
 				},
 				"ldRecEventType": {
 					"type": "dropdown",
-					"left": 23,
-					"top": 279,
+					"left": 94,
+					"top": 312,
 					"width": 233,
 					"height": 20,
 					"events": [
@@ -310,8 +310,8 @@
 				"btDataStoreManager": {
 					"type": "button",
 					"text": "DataStoreManager",
-					"top": 287,
-					"left": 365,
+					"top": 313,
+					"left": 504,
 					"width": 250,
 					"height": 57,
 					"events": [
@@ -323,29 +323,69 @@
 				},
 				"Séparateur": {
 					"type": "splitter",
-					"left": 32,
-					"top": 257,
+					"left": 30,
+					"top": 282,
 					"width": 731,
 					"height": 10
 				},
 				"Séparateur1": {
 					"type": "splitter",
-					"left": 20,
-					"top": 373,
-					"width": 743,
-					"height": 7
+					"left": 32,
+					"top": 398,
+					"width": 731,
+					"height": 5
 				},
 				"Séparateur2": {
 					"type": "splitter",
-					"left": 303,
-					"top": 262,
+					"left": 470,
+					"top": 285,
 					"width": 6,
 					"height": 118
+				},
+				"Séparateur3": {
+					"type": "splitter",
+					"left": 757,
+					"top": 282,
+					"width": 6,
+					"height": 118
+				},
+				"Séparateur4": {
+					"type": "splitter",
+					"left": 30,
+					"top": 282,
+					"width": 6,
+					"height": 118
+				},
+				"TextTypeStatut": {
+					"type": "text",
+					"top": 285,
+					"left": 32,
+					"width": 133,
+					"height": 16,
+					"text": "Type/Statut",
+					"class": "cuLabel",
+					"textDecoration": "none",
+					"fontWeight": "bold",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
+				},
+				"textFormFDataStoreManager": {
+					"type": "text",
+					"top": 285,
+					"left": 475,
+					"width": 222,
+					"height": 16,
+					"text": "Formulaire du DataStoreManager",
+					"class": "cuLabel",
+					"textDecoration": "none",
+					"fontWeight": "bold",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				}
 			}
 		}
 	],
-	"geometryStamp": 238,
+	"geometryStamp": 301,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
