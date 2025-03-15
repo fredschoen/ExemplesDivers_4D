@@ -1,0 +1,1 @@
+ALERT:C41("tester OK en v20.3 4D Server"+Char:C90(Carriage return:K15:38)+"fred")
