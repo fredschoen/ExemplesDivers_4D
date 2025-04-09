@@ -357,11 +357,23 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/btUseLocalizedLanguageFalse.4dm"
+				},
+				"btblob_dump": {
+					"type": "button",
+					"text": "blob_dump",
+					"top": 337,
+					"left": 355,
+					"width": 116,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btblob_dump.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 531,
+	"geometryStamp": 534,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

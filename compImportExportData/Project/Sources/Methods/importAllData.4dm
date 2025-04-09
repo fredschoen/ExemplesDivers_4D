@@ -75,12 +75,14 @@ For ($tableNumber_i; 1; Get last table number:C254)
 					$e[$fieldName_t]:=Num:C11($column_t)
 				: ($fieldType_t="date")
 					$e[$fieldName_t]:=Date:C102($column_t)
+				: ($fieldType_t="blob")
+					$fieldValue_t:=""
+				: ($fieldType_t="image")
+					$fieldValue_t:=""
+				: ($fieldType_t="object")
+					$fieldValue_t:=""
 				Else 
-					//décoder les caractères spéciaux (tab et cr)
-					If ($fieldValue_t="Le Bison") & ($fieldName_t="Info")
-						TRACE:C157
-					End if 
-					
+					//tstring ou text: décoder les caractères spéciaux (tab et cr codés ^ et | lors de l'export)
 					$fieldValue_t:=Replace string:C233($column_t; "|"; Char:C90(Carriage return:K15:38))
 					$fieldValue_t:=Replace string:C233($fieldValue_t; "^"; Char:C90(Tab:K15:37))
 					$e[$fieldName_t]:=$fieldValue_t
