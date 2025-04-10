@@ -9,8 +9,8 @@
 C_TEXT:C284($1)
 C_TEXT:C284($0)
 WEB SERVICE SET PARAMETER:C777("monsieur"; $1)
-WEB SERVICE CALL:C778("http://localhost/4DSOAP/"; "A_WebService#serviceweb_fred"; "serviceweb_fred"; "http://www.4d.com/namespace/default"; Web Service dynamic:K48:1)
-
+WEB SERVICE CALL:C778("http://127.0.0.1/4DSOAP/"; "A_WebService#serviceweb_fred"; "serviceweb_fred"; "http://www.4d.com/namespace/default"; Web Service dynamic:K48:1)
+//aussi OK : WEB SERVICE CALL("http://localhost/4DSOAP/"; "A_WebService#serviceweb_fred"; "serviceweb_fred"; "http://www.4d.com/namespace/default"; Web Service dynamic)
 If (OK=1)
 	WEB SERVICE GET RESULT:C779($0; "madame"; *)  // Libération de la mémoire après retour de la valeur.
 End if 
